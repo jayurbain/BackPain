@@ -11859,7 +11859,7 @@ SLEEP - 24. ??</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11881,7 +11881,7 @@ SLEEP - 24. ??</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[130]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11905,7 +11905,7 @@ SLEEP - 24. ??</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
@@ -11925,25 +11925,45 @@ SLEEP - 24. ??</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>       ID  DUR  FREQ  NRS  RAD  PIDAY  PIWORK  PPISOC  PICHOR  LBS  ...    \
-count 200  200   200  199  199    200     200     199     199  200  ...     
-mean  116    4     2    5    0      3       3       3       3    0  ...     
-std    69    1     1    2    0      1       1       1       1    1  ...     
-min     5    1     1    1    0      1       1       1       1    0  ...     
-25%    58    3     2  nan  nan      3       3     nan     nan    0  ...     
-50%   108    4     3  nan  nan      3       3     nan     nan    0  ...     
-75%   172    4     3  nan  nan      4       4     nan     nan    0  ...     
-max   242    4     3   10    1      5       5       5       5    2  ...     
+<pre>               ID         DUR       FREQ         NRS         RAD       PIDAY  \
+count  200.000000  200.000000  200.00000  199.000000  199.000000  200.000000   
+mean   115.520000    3.530000    2.45000    5.492462    0.422111    3.330000   
+std     68.958436    0.686627    0.72118    2.117434    0.495142    1.061477   
+min      5.000000    1.000000    1.00000    1.000000    0.000000    1.000000   
+25%     57.750000    3.000000    2.00000         NaN         NaN    3.000000   
+50%    107.500000    4.000000    3.00000         NaN         NaN    3.000000   
+75%    172.250000    4.000000    3.00000         NaN         NaN    4.000000   
+max    242.000000    4.000000    3.00000   10.000000    1.000000    5.000000   
 
-       EMP  EDU  SMOK  HT  WT  RACE  PI  FUN  DEP  SLEEP  
-count  200  200   119 187 188   181 198  174   96    197  
-mean     3    5     0  67 175     4  13   10    7     13  
-std      2    2     0   4  42     1   4    3    5      4  
-min      0    0     0  50  96     0   4    5    4      4  
-25%      1    3   nan nan nan   nan nan  nan  nan    nan  
-50%      2    6   nan nan nan   nan nan  nan  nan    nan  
-75%      5    6   nan nan nan   nan nan  nan  nan    nan  
-max      9    9     0  77 350     5  20   17   20     20  
+           PIWORK      PPISOC      PICHOR         LBS     ...             EMP  \
+count  200.000000  199.000000  199.000000  200.000000     ...      200.000000   
+mean     3.430000    3.160804    3.407035    0.200000     ...        2.680000   
+std      1.091355    1.236757    1.154766    0.530478     ...        2.087917   
+min      1.000000    1.000000    1.000000    0.000000     ...        0.000000   
+25%      3.000000         NaN         NaN    0.000000     ...        1.000000   
+50%      3.000000         NaN         NaN    0.000000     ...        2.000000   
+75%      4.000000         NaN         NaN    0.000000     ...        5.000000   
+max      5.000000    5.000000    5.000000    2.000000     ...        9.000000   
+
+              EDU   SMOK          HT          WT        RACE          PI  \
+count  200.000000  119.0  187.000000  188.000000  181.000000  198.000000   
+mean     4.905000    0.0   66.861497  174.928191    4.276243   13.308081   
+std      2.106695    0.0    4.411448   41.924957    1.312732    4.166708   
+min      0.000000    0.0   50.000000   96.000000    0.000000    4.000000   
+25%      3.000000    NaN         NaN         NaN         NaN         NaN   
+50%      6.000000    NaN         NaN         NaN         NaN         NaN   
+75%      6.000000    NaN         NaN         NaN         NaN         NaN   
+max      9.000000    0.0   77.000000  350.000000    5.000000   20.000000   
+
+              FUN        DEP       SLEEP  
+count  174.000000  96.000000  197.000000  
+mean     9.885057   7.166667   12.842640  
+std      3.218176   4.619562    3.829345  
+min      5.000000   4.000000    4.000000  
+25%           NaN        NaN         NaN  
+50%           NaN        NaN         NaN  
+75%           NaN        NaN         NaN  
+max     17.000000  20.000000   20.000000  
 
 [8 rows x 60 columns]
 </pre>
@@ -11956,7 +11976,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[132]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># dislay</span>
@@ -11971,7 +11991,7 @@ max      9    9     0  77 350     5  20   17   20     20
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[132]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -12002,198 +12022,198 @@ max      9    9     0  77 350     5  20   17   20     20
       <td>5</td>
       <td>1</td>
       <td>2</td>
-      <td>6</td>
-      <td>0</td>
+      <td>6.0</td>
+      <td>0.0</td>
       <td>3</td>
       <td>4</td>
-      <td>4</td>
-      <td>3</td>
+      <td>4.0</td>
+      <td>3.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>8</td>
       <td>4</td>
       <td>2</td>
-      <td>3</td>
-      <td>1</td>
+      <td>3.0</td>
+      <td>1.0</td>
       <td>2</td>
       <td>2</td>
-      <td>3</td>
-      <td>3</td>
+      <td>3.0</td>
+      <td>3.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>10</td>
       <td>3</td>
       <td>3</td>
+      <td>2.0</td>
+      <td>1.0</td>
       <td>2</td>
-      <td>1</td>
       <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
       <td>11</td>
       <td>4</td>
       <td>2</td>
-      <td>7</td>
-      <td>1</td>
+      <td>7.0</td>
+      <td>1.0</td>
       <td>4</td>
       <td>4</td>
-      <td>4</td>
-      <td>4</td>
+      <td>4.0</td>
+      <td>4.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>4</th>
       <td>12</td>
       <td>3</td>
       <td>3</td>
-      <td>6</td>
-      <td>1</td>
+      <td>6.0</td>
+      <td>1.0</td>
       <td>3</td>
       <td>4</td>
-      <td>2</td>
-      <td>3</td>
+      <td>2.0</td>
+      <td>3.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>5</th>
       <td>13</td>
       <td>3</td>
       <td>3</td>
-      <td>7</td>
-      <td>1</td>
+      <td>7.0</td>
+      <td>1.0</td>
       <td>4</td>
       <td>4</td>
-      <td>4</td>
-      <td>4</td>
+      <td>4.0</td>
+      <td>4.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>6</th>
       <td>14</td>
       <td>3</td>
       <td>1</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>1</td>
       <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
-      <td>1</td>
-      <td>2</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>1</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>7</th>
       <td>15</td>
       <td>4</td>
       <td>2</td>
-      <td>1</td>
-      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
       <td>2</td>
       <td>1</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>1</td>
-      <td>nan</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>8</th>
       <td>16</td>
       <td>3</td>
       <td>2</td>
-      <td>5</td>
-      <td>0</td>
+      <td>5.0</td>
+      <td>0.0</td>
       <td>3</td>
       <td>3</td>
-      <td>3</td>
-      <td>3</td>
+      <td>3.0</td>
+      <td>3.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>0</td>
-      <td>0</td>
-      <td>nan</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>9</th>
       <td>17</td>
       <td>4</td>
       <td>2</td>
+      <td>4.0</td>
+      <td>0.0</td>
       <td>4</td>
-      <td>0</td>
       <td>4</td>
-      <td>4</td>
-      <td>3</td>
-      <td>4</td>
+      <td>3.0</td>
+      <td>4.0</td>
       <td>0</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>10</th>
       <td>18</td>
       <td>4</td>
       <td>2</td>
-      <td>5</td>
-      <td>1</td>
-      <td>5</td>
-      <td>5</td>
+      <td>5.0</td>
+      <td>1.0</td>
       <td>5</td>
       <td>5</td>
+      <td>5.0</td>
+      <td>5.0</td>
       <td>2</td>
-      <td>3</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
     </tr>
   </tbody>
 </table>
@@ -12208,7 +12228,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[133]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#df.ix[0:10, 15:30]</span>
@@ -12221,7 +12241,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#df.ix[0:10, 30:45]</span>
@@ -12234,7 +12254,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#df.ix[0:10, 45:60]</span>
@@ -12257,7 +12277,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[136]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;HIS&#39;</span><span class="p">,</span><span class="s1">&#39;NAT&#39;</span><span class="p">,</span><span class="s1">&#39;ASA&#39;</span><span class="p">,</span><span class="s1">&#39;BL&#39;</span><span class="p">,</span><span class="s1">&#39;PAC&#39;</span><span class="p">,</span><span class="s1">&#39;W&#39;</span><span class="p">,</span><span class="s1">&#39;UNK&#39;</span><span class="p">,</span><span class="s1">&#39;NA.&#39;</span><span class="p">,</span><span class="s1">&#39;LBST&#39;</span><span class="p">,</span><span class="s1">&#39;FUS&#39;</span><span class="p">,</span><span class="s1">&#39;BL&#39;</span><span class="p">,</span><span class="s1">&#39;PAC&#39;</span><span class="p">,</span><span class="s1">&#39;W&#39;</span><span class="p">,</span><span class="s1">&#39;UNK&#39;</span><span class="p">,</span><span class="s1">&#39;NA.&#39;</span><span class="p">,</span><span class="s1">&#39;SMOK&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -12272,7 +12292,7 @@ max      9    9     0  77 350     5  20   17   20     20
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[136]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -12309,240 +12329,240 @@ max      9    9     0  77 350     5  20   17   20     20
       <td>5</td>
       <td>1</td>
       <td>2</td>
-      <td>6</td>
-      <td>0</td>
+      <td>6.0</td>
+      <td>0.0</td>
       <td>3</td>
       <td>4</td>
-      <td>4</td>
-      <td>3</td>
+      <td>4.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>0</td>
-      <td>72</td>
-      <td>123</td>
-      <td>5</td>
-      <td>14</td>
-      <td>11</td>
-      <td>20</td>
-      <td>11</td>
+      <td>72.0</td>
+      <td>123.0</td>
+      <td>5.0</td>
+      <td>14.0</td>
+      <td>11.0</td>
+      <td>20.0</td>
+      <td>11.0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>8</td>
       <td>4</td>
       <td>2</td>
-      <td>3</td>
-      <td>1</td>
+      <td>3.0</td>
+      <td>1.0</td>
       <td>2</td>
       <td>2</td>
-      <td>3</td>
-      <td>3</td>
+      <td>3.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>6</td>
-      <td>69</td>
-      <td>175</td>
-      <td>5</td>
-      <td>10</td>
-      <td>7</td>
-      <td>12</td>
-      <td>9</td>
+      <td>69.0</td>
+      <td>175.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>7.0</td>
+      <td>12.0</td>
+      <td>9.0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>10</td>
       <td>3</td>
       <td>3</td>
+      <td>2.0</td>
+      <td>1.0</td>
       <td>2</td>
-      <td>1</td>
       <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>8</td>
-      <td>67</td>
-      <td>130</td>
-      <td>5</td>
-      <td>7</td>
-      <td>5</td>
-      <td>10</td>
-      <td>10</td>
+      <td>67.0</td>
+      <td>130.0</td>
+      <td>5.0</td>
+      <td>7.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>3</th>
       <td>11</td>
       <td>4</td>
       <td>2</td>
-      <td>7</td>
-      <td>1</td>
+      <td>7.0</td>
+      <td>1.0</td>
       <td>4</td>
       <td>4</td>
-      <td>4</td>
-      <td>4</td>
+      <td>4.0</td>
+      <td>4.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>6</td>
-      <td>62</td>
-      <td>108</td>
-      <td>5</td>
-      <td>16</td>
-      <td>12</td>
-      <td>18</td>
-      <td>17</td>
+      <td>62.0</td>
+      <td>108.0</td>
+      <td>5.0</td>
+      <td>16.0</td>
+      <td>12.0</td>
+      <td>18.0</td>
+      <td>17.0</td>
     </tr>
     <tr>
       <th>4</th>
       <td>12</td>
       <td>3</td>
       <td>3</td>
-      <td>6</td>
-      <td>1</td>
+      <td>6.0</td>
+      <td>1.0</td>
       <td>3</td>
       <td>4</td>
-      <td>2</td>
-      <td>3</td>
+      <td>2.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>4</td>
-      <td>74</td>
-      <td>260</td>
-      <td>5</td>
-      <td>12</td>
-      <td>12</td>
-      <td>7</td>
-      <td>13</td>
+      <td>74.0</td>
+      <td>260.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>7.0</td>
+      <td>13.0</td>
     </tr>
     <tr>
       <th>5</th>
       <td>13</td>
       <td>3</td>
       <td>3</td>
-      <td>7</td>
-      <td>1</td>
+      <td>7.0</td>
+      <td>1.0</td>
       <td>4</td>
       <td>4</td>
-      <td>4</td>
-      <td>4</td>
+      <td>4.0</td>
+      <td>4.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>7</td>
-      <td>64</td>
-      <td>170</td>
-      <td>5</td>
-      <td>16</td>
-      <td>13</td>
-      <td>6</td>
-      <td>12</td>
+      <td>64.0</td>
+      <td>170.0</td>
+      <td>5.0</td>
+      <td>16.0</td>
+      <td>13.0</td>
+      <td>6.0</td>
+      <td>12.0</td>
     </tr>
     <tr>
       <th>6</th>
       <td>14</td>
       <td>3</td>
       <td>1</td>
-      <td>2</td>
-      <td>0</td>
+      <td>2.0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>2</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>7</td>
-      <td>66</td>
-      <td>198</td>
-      <td>5</td>
-      <td>6</td>
-      <td>nan</td>
-      <td>5</td>
-      <td>13</td>
+      <td>66.0</td>
+      <td>198.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>5.0</td>
+      <td>13.0</td>
     </tr>
     <tr>
       <th>7</th>
       <td>15</td>
       <td>4</td>
       <td>2</td>
-      <td>1</td>
-      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
       <td>2</td>
       <td>1</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>3</td>
-      <td>64</td>
-      <td>125</td>
-      <td>5</td>
-      <td>6</td>
-      <td>nan</td>
-      <td>7</td>
-      <td>7</td>
+      <td>64.0</td>
+      <td>125.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>7.0</td>
+      <td>7.0</td>
     </tr>
     <tr>
       <th>8</th>
       <td>16</td>
       <td>3</td>
       <td>2</td>
-      <td>5</td>
-      <td>0</td>
+      <td>5.0</td>
+      <td>0.0</td>
       <td>3</td>
       <td>3</td>
-      <td>3</td>
-      <td>3</td>
+      <td>3.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>7</td>
-      <td>68</td>
-      <td>185</td>
-      <td>5</td>
-      <td>12</td>
-      <td>nan</td>
-      <td>nan</td>
-      <td>6</td>
+      <td>68.0</td>
+      <td>185.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.0</td>
     </tr>
     <tr>
       <th>9</th>
       <td>17</td>
       <td>4</td>
       <td>2</td>
+      <td>4.0</td>
+      <td>0.0</td>
       <td>4</td>
-      <td>0</td>
       <td>4</td>
-      <td>4</td>
-      <td>3</td>
-      <td>4</td>
+      <td>3.0</td>
+      <td>4.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>9</td>
-      <td>68</td>
-      <td>190</td>
-      <td>5</td>
-      <td>15</td>
-      <td>9</td>
-      <td>9</td>
-      <td>10</td>
+      <td>68.0</td>
+      <td>190.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>9.0</td>
+      <td>9.0</td>
+      <td>10.0</td>
     </tr>
   </tbody>
 </table>
@@ -12567,7 +12587,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[137]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
@@ -12581,7 +12601,7 @@ max      9    9     0  77 350     5  20   17   20     20
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[137]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12602,7 +12622,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[138]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># set remaining NA to 0</span>
@@ -12618,7 +12638,7 @@ max      9    9     0  77 350     5  20   17   20     20
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[138]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -12655,240 +12675,240 @@ max      9    9     0  77 350     5  20   17   20     20
       <td>5</td>
       <td>1</td>
       <td>2</td>
-      <td>6</td>
-      <td>0</td>
+      <td>6.0</td>
+      <td>0.0</td>
       <td>3</td>
       <td>4</td>
-      <td>4</td>
-      <td>3</td>
+      <td>4.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>0</td>
-      <td>72</td>
-      <td>123</td>
-      <td>5</td>
-      <td>14</td>
-      <td>11</td>
-      <td>20</td>
-      <td>11</td>
+      <td>72.0</td>
+      <td>123.0</td>
+      <td>5.0</td>
+      <td>14.0</td>
+      <td>11.0</td>
+      <td>20.0</td>
+      <td>11.0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>8</td>
       <td>4</td>
       <td>2</td>
-      <td>3</td>
-      <td>1</td>
+      <td>3.0</td>
+      <td>1.0</td>
       <td>2</td>
       <td>2</td>
-      <td>3</td>
-      <td>3</td>
+      <td>3.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>6</td>
-      <td>69</td>
-      <td>175</td>
-      <td>5</td>
-      <td>10</td>
-      <td>7</td>
-      <td>12</td>
-      <td>9</td>
+      <td>69.0</td>
+      <td>175.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>7.0</td>
+      <td>12.0</td>
+      <td>9.0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>10</td>
       <td>3</td>
       <td>3</td>
+      <td>2.0</td>
+      <td>1.0</td>
       <td>2</td>
-      <td>1</td>
       <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>8</td>
-      <td>67</td>
-      <td>130</td>
-      <td>5</td>
-      <td>7</td>
-      <td>5</td>
-      <td>10</td>
-      <td>10</td>
+      <td>67.0</td>
+      <td>130.0</td>
+      <td>5.0</td>
+      <td>7.0</td>
+      <td>5.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>3</th>
       <td>11</td>
       <td>4</td>
       <td>2</td>
-      <td>7</td>
-      <td>1</td>
+      <td>7.0</td>
+      <td>1.0</td>
       <td>4</td>
       <td>4</td>
-      <td>4</td>
-      <td>4</td>
+      <td>4.0</td>
+      <td>4.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>6</td>
-      <td>62</td>
-      <td>108</td>
-      <td>5</td>
-      <td>16</td>
-      <td>12</td>
-      <td>18</td>
-      <td>17</td>
+      <td>62.0</td>
+      <td>108.0</td>
+      <td>5.0</td>
+      <td>16.0</td>
+      <td>12.0</td>
+      <td>18.0</td>
+      <td>17.0</td>
     </tr>
     <tr>
       <th>4</th>
       <td>12</td>
       <td>3</td>
       <td>3</td>
-      <td>6</td>
-      <td>1</td>
+      <td>6.0</td>
+      <td>1.0</td>
       <td>3</td>
       <td>4</td>
-      <td>2</td>
-      <td>3</td>
+      <td>2.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>4</td>
-      <td>74</td>
-      <td>260</td>
-      <td>5</td>
-      <td>12</td>
-      <td>12</td>
-      <td>7</td>
-      <td>13</td>
+      <td>74.0</td>
+      <td>260.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>12.0</td>
+      <td>7.0</td>
+      <td>13.0</td>
     </tr>
     <tr>
       <th>5</th>
       <td>13</td>
       <td>3</td>
       <td>3</td>
-      <td>7</td>
-      <td>1</td>
+      <td>7.0</td>
+      <td>1.0</td>
       <td>4</td>
       <td>4</td>
-      <td>4</td>
-      <td>4</td>
+      <td>4.0</td>
+      <td>4.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>7</td>
-      <td>64</td>
-      <td>170</td>
-      <td>5</td>
-      <td>16</td>
-      <td>13</td>
-      <td>6</td>
-      <td>12</td>
+      <td>64.0</td>
+      <td>170.0</td>
+      <td>5.0</td>
+      <td>16.0</td>
+      <td>13.0</td>
+      <td>6.0</td>
+      <td>12.0</td>
     </tr>
     <tr>
       <th>6</th>
       <td>14</td>
       <td>3</td>
       <td>1</td>
-      <td>2</td>
-      <td>0</td>
+      <td>2.0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>2</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>7</td>
-      <td>66</td>
-      <td>198</td>
-      <td>5</td>
-      <td>6</td>
-      <td>0</td>
-      <td>5</td>
-      <td>13</td>
+      <td>66.0</td>
+      <td>198.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>13.0</td>
     </tr>
     <tr>
       <th>7</th>
       <td>15</td>
       <td>4</td>
       <td>2</td>
-      <td>1</td>
-      <td>0</td>
+      <td>1.0</td>
+      <td>0.0</td>
       <td>2</td>
       <td>1</td>
-      <td>1</td>
-      <td>2</td>
+      <td>1.0</td>
+      <td>2.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>3</td>
-      <td>64</td>
-      <td>125</td>
-      <td>5</td>
-      <td>6</td>
-      <td>0</td>
-      <td>7</td>
-      <td>7</td>
+      <td>64.0</td>
+      <td>125.0</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>0.0</td>
+      <td>7.0</td>
+      <td>7.0</td>
     </tr>
     <tr>
       <th>8</th>
       <td>16</td>
       <td>3</td>
       <td>2</td>
-      <td>5</td>
-      <td>0</td>
+      <td>5.0</td>
+      <td>0.0</td>
       <td>3</td>
       <td>3</td>
-      <td>3</td>
-      <td>3</td>
+      <td>3.0</td>
+      <td>3.0</td>
       <td>0</td>
       <td>...</td>
-      <td>1</td>
+      <td>1.0</td>
       <td>1</td>
       <td>7</td>
-      <td>68</td>
-      <td>185</td>
-      <td>5</td>
-      <td>12</td>
-      <td>0</td>
-      <td>0</td>
-      <td>6</td>
+      <td>68.0</td>
+      <td>185.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>6.0</td>
     </tr>
     <tr>
       <th>9</th>
       <td>17</td>
       <td>4</td>
       <td>2</td>
+      <td>4.0</td>
+      <td>0.0</td>
       <td>4</td>
-      <td>0</td>
       <td>4</td>
-      <td>4</td>
-      <td>3</td>
-      <td>4</td>
+      <td>3.0</td>
+      <td>4.0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+      <td>0.0</td>
       <td>1</td>
       <td>9</td>
-      <td>68</td>
-      <td>190</td>
-      <td>5</td>
-      <td>15</td>
-      <td>9</td>
-      <td>9</td>
-      <td>10</td>
+      <td>68.0</td>
+      <td>190.0</td>
+      <td>5.0</td>
+      <td>15.0</td>
+      <td>9.0</td>
+      <td>9.0</td>
+      <td>10.0</td>
     </tr>
   </tbody>
 </table>
@@ -12914,7 +12934,7 @@ max      9    9     0  77 350     5  20   17   20     20
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ID&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ID&#39;</span><span class="p">]</span>
@@ -13009,7 +13029,7 @@ Chi-squared tests are based on the so-called chi-squared statistic. You calculat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -13023,7 +13043,7 @@ Chi-squared tests are based on the so-called chi-squared statistic. You calculat
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[140]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13057,195 +13077,195 @@ Chi-squared tests are based on the so-called chi-squared statistic. You calculat
   <tbody>
     <tr>
       <th>count</th>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.00000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
       <td>...</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
-      <td>200</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
+      <td>200.000000</td>
     </tr>
     <tr>
       <th>mean</th>
-      <td>116</td>
-      <td>4</td>
-      <td>2</td>
-      <td>5</td>
-      <td>3</td>
-      <td>3</td>
-      <td>3</td>
-      <td>3</td>
-      <td>0</td>
-      <td>1</td>
+      <td>115.520000</td>
+      <td>3.530000</td>
+      <td>2.45000</td>
+      <td>5.465000</td>
+      <td>3.330000</td>
+      <td>3.430000</td>
+      <td>3.145000</td>
+      <td>3.390000</td>
+      <td>0.490000</td>
+      <td>1.150000</td>
       <td>...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>45</td>
-      <td>5</td>
-      <td>63</td>
-      <td>164</td>
-      <td>13</td>
-      <td>9</td>
-      <td>3</td>
-      <td>13</td>
+      <td>0.485000</td>
+      <td>0.995000</td>
+      <td>44.950000</td>
+      <td>4.905000</td>
+      <td>62.505000</td>
+      <td>164.430000</td>
+      <td>13.175000</td>
+      <td>8.600000</td>
+      <td>3.440000</td>
+      <td>12.650000</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>69</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
+      <td>68.958436</td>
+      <td>0.686627</td>
+      <td>0.72118</td>
+      <td>2.147518</td>
+      <td>1.061477</td>
+      <td>1.091355</td>
+      <td>1.253728</td>
+      <td>1.176786</td>
+      <td>0.633963</td>
+      <td>0.748533</td>
       <td>...</td>
-      <td>1</td>
-      <td>0</td>
-      <td>15</td>
-      <td>2</td>
-      <td>17</td>
-      <td>58</td>
-      <td>4</td>
-      <td>4</td>
-      <td>5</td>
-      <td>4</td>
+      <td>0.890923</td>
+      <td>0.070711</td>
+      <td>14.929567</td>
+      <td>2.106695</td>
+      <td>17.062109</td>
+      <td>58.187231</td>
+      <td>4.353059</td>
+      <td>4.484479</td>
+      <td>4.803307</td>
+      <td>4.109983</td>
     </tr>
     <tr>
       <th>min</th>
-      <td>5</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>5.000000</td>
+      <td>1.000000</td>
+      <td>1.00000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>25%</th>
-      <td>58</td>
-      <td>3</td>
-      <td>2</td>
-      <td>4</td>
-      <td>3</td>
-      <td>3</td>
-      <td>2</td>
-      <td>2</td>
-      <td>0</td>
-      <td>1</td>
+      <td>57.750000</td>
+      <td>3.000000</td>
+      <td>2.00000</td>
+      <td>4.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>2.000000</td>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
       <td>...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>35</td>
-      <td>3</td>
-      <td>64</td>
-      <td>140</td>
-      <td>11</td>
-      <td>6</td>
-      <td>0</td>
-      <td>10</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>35.000000</td>
+      <td>3.000000</td>
+      <td>63.750000</td>
+      <td>140.000000</td>
+      <td>10.750000</td>
+      <td>6.000000</td>
+      <td>0.000000</td>
+      <td>10.000000</td>
     </tr>
     <tr>
       <th>50%</th>
-      <td>108</td>
-      <td>4</td>
-      <td>3</td>
-      <td>6</td>
-      <td>3</td>
-      <td>3</td>
-      <td>3</td>
-      <td>4</td>
-      <td>0</td>
-      <td>1</td>
+      <td>107.500000</td>
+      <td>4.000000</td>
+      <td>3.00000</td>
+      <td>6.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>4.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
       <td>...</td>
-      <td>0</td>
-      <td>1</td>
-      <td>46</td>
-      <td>6</td>
-      <td>66</td>
-      <td>165</td>
-      <td>13</td>
-      <td>9</td>
-      <td>0</td>
-      <td>12</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>46.000000</td>
+      <td>6.000000</td>
+      <td>66.000000</td>
+      <td>165.000000</td>
+      <td>13.000000</td>
+      <td>9.000000</td>
+      <td>0.000000</td>
+      <td>12.000000</td>
     </tr>
     <tr>
       <th>75%</th>
-      <td>172</td>
-      <td>4</td>
-      <td>3</td>
-      <td>7</td>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-      <td>4</td>
-      <td>1</td>
-      <td>2</td>
+      <td>172.250000</td>
+      <td>4.000000</td>
+      <td>3.00000</td>
+      <td>7.000000</td>
+      <td>4.000000</td>
+      <td>4.000000</td>
+      <td>4.000000</td>
+      <td>4.000000</td>
+      <td>1.000000</td>
+      <td>2.000000</td>
       <td>...</td>
-      <td>1</td>
-      <td>1</td>
-      <td>56</td>
-      <td>6</td>
-      <td>70</td>
-      <td>197</td>
-      <td>16</td>
-      <td>12</td>
-      <td>5</td>
-      <td>16</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>56.250000</td>
+      <td>6.000000</td>
+      <td>70.000000</td>
+      <td>197.250000</td>
+      <td>16.000000</td>
+      <td>12.000000</td>
+      <td>5.000000</td>
+      <td>16.000000</td>
     </tr>
     <tr>
       <th>max</th>
-      <td>242</td>
-      <td>4</td>
-      <td>3</td>
-      <td>10</td>
-      <td>5</td>
-      <td>5</td>
-      <td>5</td>
-      <td>5</td>
-      <td>2</td>
-      <td>2</td>
+      <td>242.000000</td>
+      <td>4.000000</td>
+      <td>3.00000</td>
+      <td>10.000000</td>
+      <td>5.000000</td>
+      <td>5.000000</td>
+      <td>5.000000</td>
+      <td>5.000000</td>
+      <td>2.000000</td>
+      <td>2.000000</td>
       <td>...</td>
-      <td>3</td>
-      <td>1</td>
-      <td>81</td>
-      <td>9</td>
-      <td>77</td>
-      <td>350</td>
-      <td>20</td>
-      <td>17</td>
-      <td>20</td>
-      <td>20</td>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>81.000000</td>
+      <td>9.000000</td>
+      <td>77.000000</td>
+      <td>350.000000</td>
+      <td>20.000000</td>
+      <td>17.000000</td>
+      <td>20.000000</td>
+      <td>20.000000</td>
     </tr>
   </tbody>
 </table>
@@ -13270,7 +13290,7 @@ Chi-squared tests are based on the so-called chi-squared statistic. You calculat
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;AGE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -13284,11 +13304,11 @@ Chi-squared tests are based on the so-called chi-squared statistic. You calculat
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[141]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1213100b8&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x10efc57b8&gt;</pre>
 </div>
 
 </div>
@@ -13297,103 +13317,131 @@ Chi-squared tests are based on the so-called chi-squared statistic. You calculat
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-sLGjCX4AAAAASUVORK5CYII=
+<img src="data:image/png;base64,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
+AElFTkSuQmCC
 "
 >
 </div>
@@ -13419,7 +13467,7 @@ ERANDS 19. Are you able to run errands and shop?</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;CHOR&#39;</span><span class="p">,</span><span class="s1">&#39;STAIR&#39;</span><span class="p">,</span><span class="s1">&#39;W15&#39;</span><span class="p">,</span><span class="s1">&#39;ERANDS&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
@@ -13439,7 +13487,7 @@ ERANDS 19. Are you able to run errands and shop?</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[142]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13514,7 +13562,7 @@ ERANDS 19. Are you able to run errands and shop?</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
@@ -13539,11 +13587,11 @@ ERANDS 19. Are you able to run errands and shop?</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[143]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x121377d68&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11195a748&gt;</pre>
 </div>
 
 </div>
@@ -13947,7 +13995,7 @@ REREpACLKCIiIiIFWEQRERERKcAiioiIiEiB/wAMnbxOngRhbgAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[144]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Boxplot</span>
@@ -14239,7 +14287,7 @@ AAAAQyEAAwAAwFAIwAAAADCU/wepZBZxZUqT5gAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[145]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14356,7 +14404,7 @@ PICHOR - 12. How much did pain interfere with your household chores?</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;PIDAY&#39;</span><span class="p">,</span><span class="s1">&#39;PIWORK&#39;</span><span class="p">,</span><span class="s1">&#39;PPISOC&#39;</span><span class="p">,</span><span class="s1">&#39;PICHOR&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
@@ -14374,7 +14422,7 @@ PICHOR - 12. How much did pain interfere with your household chores?</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[146]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -14449,7 +14497,7 @@ PICHOR - 12. How much did pain interfere with your household chores?</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Pain Interference&quot;</span><span class="p">)</span>
@@ -14466,11 +14514,11 @@ PICHOR - 12. How much did pain interfere with your household chores?</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[147]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[21]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0x12157a5f8&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x111fe10f0&gt;</pre>
 </div>
 
 </div>
@@ -14868,7 +14916,7 @@ rkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[148]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">pyplot</span><span class="o">.</span><span class="n">gcf</span><span class="p">()</span>
@@ -15118,7 +15166,7 @@ AABGIQADAADAKARgAAAAGOX/AcdRvymSf/kTAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[149]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### Are the distriubutions of pain interferance categories affected by opioid pain killers?</span>
@@ -15131,7 +15179,7 @@ AABGIQADAADAKARgAAAAGOX/AcdRvymSf/kTAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[150]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15230,7 +15278,7 @@ Power_divergenceResult(statistic=array([ 38.71702172,  39.5410279 ,  39.65831232
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[151]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;NRS&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
@@ -15249,7 +15297,7 @@ Power_divergenceResult(statistic=array([ 38.71702172,  39.5410279 ,  39.65831232
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[151]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -15307,7 +15355,7 @@ Power_divergenceResult(statistic=array([ 38.71702172,  39.5410279 ,  39.65831232
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[152]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Pain Intensity&quot;</span><span class="p">)</span>
@@ -15324,11 +15372,11 @@ Power_divergenceResult(statistic=array([ 38.71702172,  39.5410279 ,  39.65831232
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[152]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0x1218e6ef0&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x111dbefd0&gt;</pre>
 </div>
 
 </div>
@@ -15547,7 +15595,7 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[153]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -15654,7 +15702,7 @@ RAD - 4. Has back pain spread down your leg(s) during the past 2 weeks? (radicul
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[154]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
@@ -15706,11 +15754,11 @@ RAD - 4. Has back pain spread down your leg(s) during the past 2 weeks? (radicul
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[154]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[28]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.text.Text at 0x1218ce8d0&gt;</pre>
+<pre>&lt;matplotlib.text.Text at 0x113f41fd0&gt;</pre>
 </div>
 
 </div>
@@ -16013,7 +16061,7 @@ IklMFEREJImJgoiIJP0fUIjI2e7/gDkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;DUR&#39;</span><span class="p">,</span><span class="s1">&#39;FREQ&#39;</span><span class="p">,</span><span class="s1">&#39;NRS&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -16027,7 +16075,7 @@ IklMFEREJImJgoiIJP0fUIjI2e7/gDkAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[155]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -16111,7 +16159,7 @@ IklMFEREJImJgoiIJP0fUIjI2e7/gDkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[156]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;RAD&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -16125,7 +16173,7 @@ IklMFEREJImJgoiIJP0fUIjI2e7/gDkAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[156]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -16197,11 +16245,12 @@ IklMFEREJImJgoiIJP0fUIjI2e7/gDkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[157]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">svm</span>
 <span class="c1"># X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=0</span>
 
@@ -16212,6 +16261,8 @@ IklMFEREJImJgoiIJP0fUIjI2e7/gDkAAAAASUVORK5CYII=
        <span class="s1">&#39;CAT.SAFE&#39;</span><span class="p">,</span> <span class="s1">&#39;CAT.NEVER&#39;</span><span class="p">,</span> <span class="s1">&#39;LIT&#39;</span><span class="p">,</span> <span class="s1">&#39;AS&#39;</span><span class="p">,</span> <span class="s1">&#39;ETOH&#39;</span><span class="p">,</span> <span class="s1">&#39;SAHELP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span> <span class="s1">&#39;SEX&#39;</span><span class="p">,</span>
        <span class="s1">&#39;EMP&#39;</span><span class="p">,</span> <span class="s1">&#39;EDU&#39;</span><span class="p">,</span> <span class="s1">&#39;HT&#39;</span><span class="p">,</span> <span class="s1">&#39;WT&#39;</span><span class="p">,</span> <span class="s1">&#39;RACE&#39;</span><span class="p">,</span> <span class="s1">&#39;PI&#39;</span><span class="p">,</span> <span class="s1">&#39;FUN&#39;</span><span class="p">,</span> <span class="s1">&#39;DEP&#39;</span><span class="p">,</span> <span class="s1">&#39;SLEEP&#39;</span><span class="p">]</span>
 
+<span class="n">target</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;OPI&#39;</span><span class="p">]</span>
+
 <span class="n">labels</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;OPI&quot;</span><span class="p">]</span>
 
 <span class="c1"># fit a logistic regression model to the data</span>
@@ -16220,6 +16271,7 @@ IklMFEREJImJgoiIJP0fUIjI2e7/gDkAAAAASUVORK5CYII=
 <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 
 <span class="c1"># make predictions</span>
+
 <span class="n">expected</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
 <span class="n">predicted</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">])</span>
 
@@ -16283,7 +16335,7 @@ Mean accuracy using all features: 0.69 (+/- 0.17)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[158]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
@@ -16361,7 +16413,7 @@ Mean accuracy using all features: 0.63 (+/- 0.19)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[159]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
@@ -16407,9 +16459,9 @@ Mean accuracy using all features: 0.63 (+/- 0.19)
             min_samples_split=2, min_weight_fraction_leaf=0.0,
             presort=False, random_state=None, splitter=&#39;best&#39;)
 Cross validation scores using all features
-[ 0.71428571  0.47619048  0.61904762  0.57142857  0.55        0.5
-  0.57894737  0.52631579  0.47368421  0.68421053]
-Mean accuracy using all features: 0.57 (+/- 0.16)
+[ 0.66666667  0.47619048  0.52380952  0.57142857  0.45        0.45
+  0.57894737  0.52631579  0.52631579  0.73684211]
+Mean accuracy using all features: 0.55 (+/- 0.18)
 </pre>
 </div>
 </div>
@@ -16439,7 +16491,7 @@ Mean accuracy using all features: 0.57 (+/- 0.16)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[160]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">most_informative_features</span><span class="p">(</span><span class="n">feature_names</span><span class="p">,</span> <span class="n">clf</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
@@ -16465,7 +16517,7 @@ Mean accuracy using all features: 0.57 (+/- 0.16)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[161]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
@@ -16524,7 +16576,7 @@ Mean accuracy using all features: 0.57 (+/- 0.16)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[162]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
@@ -16574,7 +16626,7 @@ Mean accuracy using all features: 0.57 (+/- 0.16)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[163]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### Decision Tree feature importances (Gini Index)</span>
@@ -16587,7 +16639,7 @@ Mean accuracy using all features: 0.57 (+/- 0.16)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[164]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
@@ -16636,14 +16688,14 @@ avg / total       1.00      1.00      1.00       200
 
 [[ 84   0]
  [  0 116]]
-[ 0.01026273  0.          0.01910446  0.          0.          0.
+[ 0.          0.01539409  0.01910446  0.          0.          0.
   0.02138068  0.04926108  0.          0.13809487  0.06064969  0.          0.
   0.          0.03078818  0.0536809   0.          0.          0.00937031
-  0.03078818  0.          0.          0.01368363  0.038128    0.01642036
-  0.01026273  0.          0.          0.          0.03239452  0.          0.
-  0.00984384  0.01710454  0.01710454  0.          0.1689602   0.
-  0.03372038  0.0351015   0.          0.0482678   0.01528214  0.01781316
-  0.04216261  0.0410509   0.01931807]
+  0.03078818  0.          0.          0.          0.038128    0.01368363
+  0.          0.          0.          0.          0.04881488  0.          0.
+  0.00984384  0.01710454  0.01026273  0.          0.1689602   0.          0.0183263
+  0.05220604  0.          0.05853052  0.01528214  0.01781316  0.04216261
+  0.0410509   0.01931807]
 </pre>
 </div>
 </div>
@@ -16663,7 +16715,7 @@ avg / total       1.00      1.00      1.00       200
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">export_graphviz</span>
@@ -16703,7 +16755,7 @@ avg / total       1.00      1.00      1.00       200
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[165]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[45]:</div>
 
 
 <div class="output_png output_subarea output_execute_result">
@@ -22339,7 +22391,7 @@ AAAAwJD/BykzJlNm0bGqAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Recursive Feature Elimination</span>
@@ -22419,7 +22471,7 @@ Features sorted by their rank:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">features_top10</span> <span class="p">)</span>
@@ -22446,7 +22498,7 @@ Features sorted by their rank:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
@@ -22537,7 +22589,7 @@ Mean accuracy using top 10 features: 0.71 (+/- 0.23)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
@@ -22628,7 +22680,7 @@ Mean accuracy using top 10 features: 0.69 (+/- 0.23)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[170]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
@@ -22680,9 +22732,9 @@ Mean accuracy using top 10 features: 0.69 (+/- 0.23)
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Top ten features:
-[&#39;PPISOC&#39; &#39;PICHOR&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;SONSET&#39; &#39;AGE&#39; &#39;EDU&#39; &#39;WT&#39; &#39;FUN&#39; &#39;DEP&#39;]
+[&#39;NRS&#39; &#39;PPISOC&#39; &#39;PICHOR&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;STAIR&#39; &#39;AGE&#39; &#39;EDU&#39; &#39;WT&#39; &#39;FUN&#39;]
 Features sorted by their rank:
-[(1, &#39;AGE&#39;), (1, &#39;DEP&#39;), (1, &#39;EDU&#39;), (1, &#39;EXE&#39;), (1, &#39;FUN&#39;), (1, &#39;INJ&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PPISOC&#39;), (1, &#39;SONSET&#39;), (1, &#39;WT&#39;), (2, &#39;JOI&#39;), (3, &#39;HELPL&#39;), (4, &#39;UNEMP&#39;), (5, &#39;STAIR&#39;), (6, &#39;NRS&#39;), (7, &#39;ABD&#39;), (8, &#39;AS&#39;), (9, &#39;CAT.NEVER&#39;), (10, &#39;RACE&#39;), (11, &#39;DIS&#39;), (12, &#39;LIT&#39;), (13, &#39;W15&#39;), (14, &#39;EMP&#39;), (15, &#39;HT&#39;), (16, &#39;LBS&#39;), (17, &#39;PI&#39;), (18, &#39;PIDAY&#39;), (19, &#39;CAT.SAFE&#39;), (20, &#39;SPROB&#39;), (21, &#39;CHOR&#39;), (22, &#39;SLEEPQ&#39;), (23, &#39;PIWORK&#39;), (24, &#39;RAD&#39;), (25, &#39;SEX&#39;), (26, &#39;DEPRES&#39;), (27, &#39;PSY&#39;), (28, &#39;HEA&#39;), (29, &#39;ERANDS&#39;), (30, &#39;ETOH&#39;), (31, &#39;HOPEL&#39;), (32, &#39;FIB&#39;), (33, &#39;WORTHL&#39;), (34, &#39;SAHELP&#39;), (35, &#39;SREFR&#39;), (36, &#39;SLEEP&#39;), (37, &#39;FREQ&#39;), (38, &#39;DUR&#39;)]
+[(1, &#39;AGE&#39;), (1, &#39;EDU&#39;), (1, &#39;EXE&#39;), (1, &#39;FUN&#39;), (1, &#39;INJ&#39;), (1, &#39;NRS&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PPISOC&#39;), (1, &#39;STAIR&#39;), (1, &#39;WT&#39;), (2, &#39;SONSET&#39;), (3, &#39;HELPL&#39;), (4, &#39;JOI&#39;), (5, &#39;DEP&#39;), (6, &#39;SREFR&#39;), (7, &#39;RACE&#39;), (8, &#39;ABD&#39;), (9, &#39;AS&#39;), (10, &#39;LIT&#39;), (11, &#39;DIS&#39;), (12, &#39;CAT.NEVER&#39;), (13, &#39;PI&#39;), (14, &#39;W15&#39;), (15, &#39;HEA&#39;), (16, &#39;PIWORK&#39;), (17, &#39;ETOH&#39;), (18, &#39;LBS&#39;), (19, &#39;HT&#39;), (20, &#39;DEPRES&#39;), (21, &#39;RAD&#39;), (22, &#39;PIDAY&#39;), (23, &#39;ERANDS&#39;), (24, &#39;EMP&#39;), (25, &#39;WORTHL&#39;), (26, &#39;SAHELP&#39;), (27, &#39;CAT.SAFE&#39;), (28, &#39;UNEMP&#39;), (29, &#39;PSY&#39;), (30, &#39;HOPEL&#39;), (31, &#39;SPROB&#39;), (32, &#39;CHOR&#39;), (33, &#39;SLEEPQ&#39;), (34, &#39;FIB&#39;), (35, &#39;SEX&#39;), (36, &#39;SLEEP&#39;), (37, &#39;FREQ&#39;), (38, &#39;DUR&#39;)]
 Model:
 DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=None,
             max_features=None, max_leaf_nodes=None,
@@ -22690,9 +22742,9 @@ DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=No
             min_samples_split=2, min_weight_fraction_leaf=0.0,
             presort=False, random_state=None, splitter=&#39;best&#39;)
 Cross validation scores using top 10 features
-[ 0.71428571  0.42857143  0.47619048  0.47619048  0.7         0.85
-  0.78947368  0.52631579  0.73684211  0.78947368]
-Mean accuracy using top 10 features: 0.65 (+/- 0.30)
+[ 0.61904762  0.57142857  0.57142857  0.61904762  0.65        0.75
+  0.68421053  0.42105263  0.63157895  0.73684211]
+Mean accuracy using top 10 features: 0.63 (+/- 0.18)
 </pre>
 </div>
 </div>
@@ -22716,29 +22768,329 @@ Mean accuracy using top 10 features: 0.65 (+/- 0.30)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Random-Forest">Random Forest<a class="anchor-link" href="#Random-Forest">&#182;</a></h4>
+<h4 id="DIS---15.-I-receive-or-have-applied-for-disability-or-workers&#8217;-compensation-benefits-because-I-am-unable-to-work-due-to-low-back-pain.">DIS - 15. I receive or have applied for disability or workers&#8217; compensation benefits because I am unable to work due to low-back pain.<a class="anchor-link" href="#DIS---15.-I-receive-or-have-applied-for-disability-or-workers&#8217;-compensation-benefits-because-I-am-unable-to-work-due-to-low-back-pain.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[171]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;DIS&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="c1">#result.index=[&#39;Chores&#39;,&#39;Up/down stairs&#39;,&#39;Walk 15 min.&#39;,&#39;Erands&#39;]</span>
+<span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Disagree&#39;</span><span class="p">,</span><span class="s1">&#39;Agree&#39;</span><span class="p">]</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">float_format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{:,.0f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span>
+
+<span class="c1"># cross tabulated result</span>
+<span class="n">result</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[58]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Disagree</th>
+      <th>Agree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>DIS</th>
+      <td>170</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+
+<span class="c1"># horizontal bar plot</span>
+<span class="n">plt</span><span class="o">=</span><span class="n">result</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Disability&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Number of patients&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<span class="n">plt</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[60]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x111fccba8&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+2NjiSQgAQBGVLVtWX3zxhd0xftRtn0gVHR0tr9erCxcuFFj+2GOP6Z133tGaNWtUt25dtW3bVmFh
+YcUWFACAu12xnb3coEEDzZgxQykpKUpOTtaIESM0efJkBQcHF9huz5492rNnj+9x9+7d9ebDlYsr
+RrFwOKTiOr0s2purgCNHf/Y415wOBXhtP+etkNKYi0xFQ6aiK65czsho+VeuUgyJrvvkk098f05I
+SFBCQkKxjY2Scdule+bMGTmdToWEhBRaV758ebVs2VItW7bUxIkTtW/fPjVt2rTANjf7xagxrvDp
+4r8kV+wOAKBUCBg5SXlBocUyVnBwsLp3714sY8Gcn7w4xve/UXThwgXNnTv3pmeCpaamKj8/X5J0
+5coVnTlzRpGRP32rJwAAfi1+8kj32rVrGjFixE2/MvR9hw4d0gcffCCXyyXLstS+fXtVq1atREID
+AHA3KhUXxzj+ZGO7IwBAiQsYOUme6vcVy1hcHKP0+lkXxwAA3N0y87zKvOwusfEjy/spMrDol/Lv
+2rWr9u3bp5SUFPn7+5dYrtKI0gWAX7jMy26NWHOoxMaf9Hg1RQYW7XK3J06c0DfffKOQkBCtXbtW
+Tz755G2/nsfjkcvluu3nlQbcZQgAYMyyZcv0wAMPqHv37gW+8pSTk6O+ffuqdu3a6tixo9588011
+7tzZt75KlSqaP3++HnroIbVq1UqSlJaWph49eighIUFt2rTR6tWrfdvn5+frtddeU9OmTdWwYUON
+GjVKV69eNbejP4LSBQAYs3z5cv32t79V586dtWnTJt/nz3/6058UFBSk3bt3a+rUqVq2bFmhOwKt
+XbtWX3zxhTZs2KArV66oR48e+u1vf6vU1FTNnDlTr776qtLS0iRJEyZM0JEjR/TVV19py5YtSk9P
+19SpU43v7w9RugAAI7755hudOnVKnTp1Ur169RQXF6cVK1bI6/Xqyy+/1Msvv6wyZcooPj6+0KWG
+JSkpKUmhoaEqU6aM1q1bp9jYWHXr1k0Oh0MJCQnq0KGD72h38eLFGjdunEJCQlSuXDkNHjxYn332
+meldLoTPdAEARixfvlytW7dWhQoVJElPPfWUli1bpqeeekput1uVK//f1Qlvdnb299efPHlSu3bt
+8l1sybIseTwede3aVVlZWbpy5UqBa0p4vV6Vgi/rULoAgJKXl5en1atXy+v1qmHDhpKuf+564cIF
+ZWRkyN/fX6dPn1bVqlUlSadOnSo0xvenm2NiYtS8eXMtXry40HaWZals2bJav369KlasWEJ7dGeY
+XgYAlLg1a9bI5XJp48aNWrdundatW6dNmzapWbNmWr58uTp06KDJkyfrypUrSktL0/Lly285Xvv2
+7XXo0CH913/9l9xut65du6bdu3crLS1NDodDzz77rMaOHev7zPj06dPatGmTiV29JY50AeAXLrK8
+nyY9XnJXCIws/9NVsnz5cv3ud78rMEUsSX379tXYsWP11Vdf6aWXXlKjRo1UvXp1de7cWbt37/Zt
+98OTqsqXL+/73Hb8+PGyLEt16tTR2LFjJV0/MWvq1Knq1KmTcnJyVKlSJfXp00dt2rQphj2+c1yR
+CgAM4YpURfeXv/xFGRkZpeKM49t1qytSMb0MALBdWlqa9u3bJ0lKTk7WkiVLbnpznbsd08sAANtd
+vnxZiYmJOnv2rKKiojRo0CA9+uijdscqdpQuAMB2DRo00JYtW+yOUeKYXgYAwBBKFwAAQyhdAAAM
+4TNdAPgFcblcioiIsDvGr9qtbjtI6QLAL4ifn5/8/PinvbRiehkAAEMoXQAADKF0AQAwhNIFAMAQ
+ShcAAEMoXQAADKF0AQAwhNIFAMAQShcAAEMoXQAADKF0AQAwhNIFAMAQShcAAEMoXQAADKF0AQAw
+hNIFAMAQShcAAEMoXQAADKF0AQAwhNIFAMAQShcAAEMoXQAADKF0AQAwhNIFAMAQShcAAEMoXQAA
+DKF0AQAwhNIFAMAQShcAAEMoXQAADKF0AQAwhNIFAMAQShcAAEP87A4gSQEjJ9kdoQCXy08ej9vu
+GAWUxkxS6cxFpqIhU9EVW67wqJ8/Bu5qpaJ0PdXvsztCAeWCg3Xx4kW7YxRQGjNJpTMXmYqGTEVX
+WnPh7sP0MgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAY
+QukCAGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAA
+hlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsA
+gCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAYQukC
+AGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6AAAYQukCAGAIpQsAgCGULgAAhlC6
+AAAY4rAsy7I7BAAAvwa2H+l+8skndkcohExFVxpzkaloyFR0pTFXacyEn2Z76QIA8GtB6QIAYIhr
+3Lhx4+wOER0dbXeEQshUdKUxF5mKhkxFVxpzlcZMuDVOpAIAwBCmlwEAMITSBQDAED87XzwlJUXz
+58+XZVlq27atnn76aeMZsrKyNGPGDJ0/f14Oh0OPPPKInnjiCV26dEnvvPOOMjIyFB0drWHDhqlc
+uXJGs3m9Xo0aNUrh4eEaMWKE7Zlyc3P13nvv6fjx43I4HBo0aJAqV65sa6bPP/9cGzZskMPhUGxs
+rBITE5WXl2c806xZs7Rr1y6Fhobq7bfflqRb/rxWrFihDRs2yOVyqV+/fmrQoIGRTIsWLdLOnTvl
+5+enihUrKjEx0fZMN6xevVqLFi3SvHnzFBQUZHumL7/8UmvXrpXT6VSjRo3Us2dPWzMdOXJEc+bM
+0bVr1+RyufT888+revXqxjKhmFg28Xg81pAhQ6yzZ89a165ds15++WXrxIkTxnPk5ORYhw8ftizL
+sq5cuWL94Q9/sE6cOGH9/e9/t1auXGlZlmWtWLHCWrRokfFsq1evtqZNm2ZNnDjRsizL9kwzZsyw
+1q9fb1mWZbndbuvy5cu2ZsrKyrIGDx5sXbt2zbIsy5oyZYq1YcMGWzLt27fPOnz4sDV8+HDfsh/L
+cfz4ceuVV16x3G63debMGWvIkCGW1+s1kmn37t2Wx+OxLMuyFi1aZH300Ue2Z7Isy8rMzLTeeOMN
+KzEx0bp48aLtmVJTU63XX3/dcrvdlmVZ1vnz523P9MYbb1gpKSmWZVnWrl27rHHjxhnNhOJh2/Ry
+WlqaKleurKioKPn5+ally5b617/+ZTxHhQoVFBcXJ0kKDAzUPffco6ysLO3YsUNt2rSRJD388MPG
+s2VlZSk5OVmPPPKIb5mdmXJzc7V//361bdtWkuRyuVSuXDnb3yev16u8vDx5PB7l5+crPDzclky1
+a9dW+fLlCyz7sRw7duxQixYt5HK5FB0drcqVKystLc1Ipvr168vpvP7XPj4+XllZWbZnkqQFCxao
+d+/eBZbZmWnt2rV6+umn5XK5JEkhISG2Z3I4HMrNzZUkXb58WWFhYUYzoXjYNr2cnZ2tiIgI3+Pw
+8HDbf1HOnj2ro0ePqmbNmjp//rwqVKgg6Xoxnz9/3miWG/8I3fhLJsnWTGfPnlVwcLBmzpypo0eP
+qlq1aurXr5+tmcLDw9WxY0clJiaqTJkyql+/vurXr2/7z+6GH8uRnZ2tmjVr+rYLDw9Xdna28Xwb
+NmxQy5Ytbc+0Y8cORUREKDY2tsByOzOdPn1ae/fu1ZIlSxQQEKDevXurWrVqtmbq27evJkyYoIUL
+F0qSXn/9dUml5/cJRcOJVP9fXl6epkyZon79+ikwMLDQeofDYSzLjc9y4uLiZN3iG10mM3m9Xh0+
+fFiPPfaYJk2apDJlymjlypW2Zrp8+bJ27NihmTNnavbs2bp69ao2b95sa6ZbKS05JOnTTz+Vy+XS
+Qw89ZGuO/Px8rVixQt27d7c1xw95PB5dvnxZEyZMUM+ePTVlyhS7I2nt2rXq16+fZs2apb59+2rW
+rFl2R8IdsK10w8PDlZmZ6XucnZ2t8PBwW7J4PB5NnjxZrVu3VpMmTSRdPzI5d+6cJOncuXMKDQ01
+lmf//v3asWOHhgwZomnTpik1NVXTp0+3NVN4eLgiIiJ8J248+OCDOnz4sK2Z/v3vfys6OlpBQUFy
+Op1q2rSpvv32W1szfd+P5fjh735WVpbR3/2NGzcqOTlZQ4cO9S2zK1N6errOnj2rV155RYMHD1Z2
+drZGjBih8+fP2/o+RUZGqlmzZpKkGjVqyOl06uLFi7Zm2rRpk5o2bSrp+t+/7777TpL9v0+4PbaV
+bo0aNZSenq6MjAy53W5t2bJFjRs3tiXLrFmzVKVKFT3xxBO+ZQ888IA2btwo6fo/UiazPfvss5o1
+a5ZmzJihl156SXXr1lVSUpKtmSpUqKCIiAidOnVK0vXCq1Kliq2ZIiMjdfDgQeXn58uyLNszWZZV
+YGbix3I0btxYW7duldvt1tmzZ5Wenq4aNWoYyZSSkqJVq1bpj3/8o/z9/X3L7coUGxurOXPmaMaM
+Gfrb3/6m8PBwTZo0SaGhoba+T02aNFFqaqok6dSpU3K73QoODrY1U3h4uPbu3Svp+t+/ypUrSzL7
+s8PPZ+sVqVJSUvThhx/Ksiy1a9fOlq8M7d+/X2PHjlVsbKwcDoccDod69OihGjVqaOrUqcrMzFRU
+VJSGDRt20xNAStrevXu1evVq31eG7Mx05MgRzZ49W2632/d1E6/Xa2umZcuWaevWrXK5XIqLi9OL
+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
+H+96AAAAAElFTkSuQmCC
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DUR&#39;</span><span class="p">,</span> <span class="s1">&#39;FREQ&#39;</span><span class="p">,</span> <span class="s1">&#39;NRS&#39;</span><span class="p">,</span> <span class="s1">&#39;RAD&#39;</span><span class="p">,</span> <span class="s1">&#39;PIDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;PIWORK&#39;</span><span class="p">,</span> <span class="s1">&#39;PPISOC&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;PICHOR&#39;</span><span class="p">,</span> <span class="s1">&#39;LBS&#39;</span><span class="p">,</span> <span class="s1">&#39;INJ&#39;</span><span class="p">,</span> <span class="s1">&#39;EXE&#39;</span><span class="p">,</span> <span class="s1">&#39;PSY&#39;</span><span class="p">,</span> <span class="s1">&#39;UNEMP&#39;</span><span class="p">,</span> <span class="s1">&#39;OPI&#39;</span><span class="p">,</span> <span class="s1">&#39;ABD&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;JOI&#39;</span><span class="p">,</span> <span class="s1">&#39;HEA&#39;</span><span class="p">,</span> <span class="s1">&#39;FIB&#39;</span><span class="p">,</span> <span class="s1">&#39;CHOR&#39;</span><span class="p">,</span> <span class="s1">&#39;STAIR&#39;</span><span class="p">,</span> <span class="s1">&#39;W15&#39;</span><span class="p">,</span> <span class="s1">&#39;ERANDS&#39;</span><span class="p">,</span> <span class="s1">&#39;WORTHL&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;HELPL&#39;</span><span class="p">,</span> <span class="s1">&#39;DEPRES&#39;</span><span class="p">,</span> <span class="s1">&#39;HOPEL&#39;</span><span class="p">,</span> <span class="s1">&#39;SLEEPQ&#39;</span><span class="p">,</span> <span class="s1">&#39;SREFR&#39;</span><span class="p">,</span> <span class="s1">&#39;SPROB&#39;</span><span class="p">,</span> <span class="s1">&#39;SONSET&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;CAT.SAFE&#39;</span><span class="p">,</span> <span class="s1">&#39;CAT.NEVER&#39;</span><span class="p">,</span> <span class="s1">&#39;LIT&#39;</span><span class="p">,</span> <span class="s1">&#39;AS&#39;</span><span class="p">,</span> <span class="s1">&#39;ETOH&#39;</span><span class="p">,</span> <span class="s1">&#39;SAHELP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span> <span class="s1">&#39;SEX&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;EMP&#39;</span><span class="p">,</span> <span class="s1">&#39;EDU&#39;</span><span class="p">,</span> <span class="s1">&#39;HT&#39;</span><span class="p">,</span> <span class="s1">&#39;WT&#39;</span><span class="p">,</span> <span class="s1">&#39;RACE&#39;</span><span class="p">,</span> <span class="s1">&#39;PI&#39;</span><span class="p">,</span> <span class="s1">&#39;FUN&#39;</span><span class="p">,</span> <span class="s1">&#39;DEP&#39;</span><span class="p">,</span> <span class="s1">&#39;SLEEP&#39;</span><span class="p">]</span>
+
+<span class="n">target</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DIS&#39;</span><span class="p">]</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;DIS&quot;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span>
 <span class="c1"># X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=0)</span>
 
-<span class="n">clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
 
-<span class="n">labels</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;OPI&quot;</span><span class="p">]</span>
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">RFE</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">rfe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">])</span>
+
+<span class="c1"># summarize the selection of the attributes</span>
+<span class="c1"># print(rfe.support_)</span>
+<span class="c1"># print(rfe.ranking_)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="n">features_top10</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top ten features:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">features_top10</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Features sorted by their rank:&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">rfe</span><span class="o">.</span><span class="n">ranking_</span><span class="p">),</span> <span class="n">features</span><span class="p">))</span> <span class="p">)</span>
 
 <span class="n">ff</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features_top10</span><span class="p">]</span>
-<span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 
-<span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">ff</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;OPI&quot;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">ff</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;DIS&quot;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Cross validation scores using top 10 features&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="p">)</span>                                             
 
@@ -22756,15 +23108,18 @@ Mean accuracy using top 10 features: 0.65 (+/- 0.30)
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=None,
-            max_features=None, max_leaf_nodes=None,
-            min_impurity_split=1e-07, min_samples_leaf=1,
-            min_samples_split=2, min_weight_fraction_leaf=0.0,
-            presort=False, random_state=None, splitter=&#39;best&#39;)
+<pre>Top ten features:
+[&#39;PIDAY&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;PSY&#39; &#39;UNEMP&#39; &#39;OPI&#39; &#39;HEA&#39; &#39;FIB&#39; &#39;ERANDS&#39; &#39;SAHELP&#39;]
+Features sorted by their rank:
+[(1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;FIB&#39;), (1, &#39;HEA&#39;), (1, &#39;INJ&#39;), (1, &#39;OPI&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (2, &#39;AS&#39;), (3, &#39;LBS&#39;), (4, &#39;DUR&#39;), (5, &#39;CAT.NEVER&#39;), (6, &#39;HOPEL&#39;), (7, &#39;SLEEPQ&#39;), (8, &#39;SPROB&#39;), (9, &#39;CAT.SAFE&#39;), (10, &#39;NRS&#39;), (11, &#39;ABD&#39;), (12, &#39;SEX&#39;), (13, &#39;EMP&#39;), (14, &#39;CHOR&#39;), (15, &#39;PPISOC&#39;), (16, &#39;FREQ&#39;), (17, &#39;ETOH&#39;), (18, &#39;RACE&#39;), (19, &#39;WORTHL&#39;), (20, &#39;HELPL&#39;), (21, &#39;EDU&#39;), (22, &#39;SREFR&#39;), (23, &#39;DEPRES&#39;), (24, &#39;STAIR&#39;), (25, &#39;FUN&#39;), (26, &#39;SLEEP&#39;), (27, &#39;RAD&#39;), (28, &#39;LIT&#39;), (29, &#39;DEP&#39;), (30, &#39;PICHOR&#39;), (31, &#39;PI&#39;), (32, &#39;PIWORK&#39;), (33, &#39;SONSET&#39;), (34, &#39;JOI&#39;), (35, &#39;AGE&#39;), (36, &#39;W15&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
+Model:
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class=&#39;ovr&#39;, n_jobs=1,
+          penalty=&#39;l2&#39;, random_state=None, solver=&#39;liblinear&#39;, tol=0.0001,
+          verbose=0, warm_start=False)
 Cross validation scores using top 10 features
-[ 0.61904762  0.57142857  0.66666667  0.57142857  0.85        0.7
-  0.73684211  0.63157895  0.73684211  0.84210526]
-Mean accuracy using top 10 features: 0.69 (+/- 0.19)
+[ 0.95  0.8   0.85  0.95  1.    1.    1.    0.9   1.    0.9 ]
+Mean accuracy using top 10 features: 0.93 (+/- 0.13)
 </pre>
 </div>
 </div>
@@ -22778,7 +23133,589 @@ Mean accuracy using top 10 features: 0.69 (+/- 0.19)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>Accuracy is 0.64 for RF classifier using top 10 features.</em></p>
+<p><em>Accuracy is 0.93 for Logistic Regression classifier using top 10 features.</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="c1"># X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=0)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">RFE</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">rfe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">])</span>
+
+<span class="c1"># summarize the selection of the attributes</span>
+<span class="c1"># print(rfe.support_)</span>
+<span class="c1"># print(rfe.ranking_)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="n">features_top10</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top ten features:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">features_top10</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Features sorted by their rank:&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">rfe</span><span class="o">.</span><span class="n">ranking_</span><span class="p">),</span> <span class="n">features</span><span class="p">))</span> <span class="p">)</span>
+
+<span class="n">ff</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features_top10</span><span class="p">]</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+<span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">ff</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;DIS&quot;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Cross validation scores using top 10 features&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="p">)</span>                                             
+
+<span class="c1"># The mean score and the 95% confidence interval of the score estimate are hence given by:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean accuracy using top 10 features: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Top ten features:
+[&#39;RAD&#39; &#39;PIDAY&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;PSY&#39; &#39;UNEMP&#39; &#39;OPI&#39; &#39;FIB&#39; &#39;SLEEPQ&#39; &#39;CAT.NEVER&#39;]
+Features sorted by their rank:
+[(1, &#39;CAT.NEVER&#39;), (1, &#39;EXE&#39;), (1, &#39;FIB&#39;), (1, &#39;INJ&#39;), (1, &#39;OPI&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PSY&#39;), (1, &#39;RAD&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;UNEMP&#39;), (2, &#39;ERANDS&#39;), (3, &#39;FREQ&#39;), (4, &#39;SPROB&#39;), (5, &#39;JOI&#39;), (6, &#39;HOPEL&#39;), (7, &#39;ABD&#39;), (8, &#39;NRS&#39;), (9, &#39;PPISOC&#39;), (10, &#39;LBS&#39;), (11, &#39;RACE&#39;), (12, &#39;WORTHL&#39;), (13, &#39;W15&#39;), (14, &#39;DUR&#39;), (15, &#39;EMP&#39;), (16, &#39;HEA&#39;), (17, &#39;CAT.SAFE&#39;), (18, &#39;SONSET&#39;), (19, &#39;AS&#39;), (20, &#39;PIWORK&#39;), (21, &#39;CHOR&#39;), (22, &#39;PI&#39;), (23, &#39;FUN&#39;), (24, &#39;SEX&#39;), (25, &#39;DEP&#39;), (26, &#39;LIT&#39;), (27, &#39;ETOH&#39;), (28, &#39;AGE&#39;), (29, &#39;HELPL&#39;), (30, &#39;SLEEP&#39;), (31, &#39;STAIR&#39;), (32, &#39;PICHOR&#39;), (33, &#39;EDU&#39;), (34, &#39;SREFR&#39;), (35, &#39;DEPRES&#39;), (36, &#39;HT&#39;), (37, &#39;WT&#39;), (38, &#39;SAHELP&#39;)]
+Model:
+SVC(C=1, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=&#39;auto&#39;, kernel=&#39;linear&#39;,
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Cross validation scores using top 10 features
+[ 0.95  0.75  0.8   0.9   0.95  1.    1.    0.85  1.    0.95]
+Mean accuracy using top 10 features: 0.91 (+/- 0.17)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Accuracy is 0.91 for SVM classifier using top 10 features.</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="29---CAT.NEVER---I-feel-that-my-back-pain-is-terrible-and-it&#8217;s-never-going-to-get-any-better.">29 - CAT.NEVER - I feel that my back pain is terrible and it&#8217;s never going to get any better.<a class="anchor-link" href="#29---CAT.NEVER---I-feel-that-my-back-pain-is-terrible-and-it&#8217;s-never-going-to-get-any-better.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;CAT.NEVER&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">value_counts</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Disagree&#39;</span><span class="p">,</span><span class="s1">&#39;Agree&#39;</span><span class="p">]</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">float_format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{:,.0f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span>
+
+<span class="c1"># cross tabulated result</span>
+<span class="n">result</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[90]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Disagree</th>
+      <th>Agree</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>CAT.NEVER</th>
+      <td>125</td>
+      <td>75</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+
+<span class="c1"># horizontal bar plot</span>
+<span class="n">plt</span><span class="o">=</span><span class="n">result</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Never going to get any better&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Number of patients&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<span class="n">plt</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[91]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1168a7cc0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgUAAAEhCAYAAADvSdOwAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAALEgAACxIB0t1+/AAAIABJREFUeJzt3XlYVPX+B/D3nBkBWXVYNCQDBTdcEnBPULNrdrVy47qL
+mVqgmU+ZmlwRs9JubjdLK00xM7eba1q5oYZoLmiJoKKCCiKbOyIM8/n94XB+jYCgpQP6fj3Pfa5z
+zpnveZ9hYt6c850ZjYgIiIiI6ImnWDoAERERVQwsBURERASApYCIiIhMWAqIiIgIAEsBERERmbAU
+EBEREQCWAqISRUVFwcrKytIx6B527doFRVGQlpZm6ShEjw2WAiomJCQEiqJgwoQJZstTU1OhKAp2
+795toWSPTt++fZGamvpI9vXhhx/Cy8vrkeyrvCpippJoNJq/PMZ3330HRSn+q/CFF17Aa6+99pfH
+J6pMWAqoGI1Gg6pVq+K///0vzp8/X2xdRVBQUPBQx7e2toarq+tD3UcREakwj2uRipjpYXkUx2ow
+GB7q+ER/F5YCKlHbtm3RrFkzTJw40Wz53R+AmZGRgZCQELi5ucHR0RHt27fHnj171G2feeYZTJ8+
+3ew++fn50Ov1+Oabb9Rln332GRo2bIiqVauifv36+Oijj1BYWKiu9/Lywr///W+EhYXBxcUFgYGB
+pWb//vvv4e3tjapVqyIwMBCbN2+GoijYu3evus2+ffsQFBQEW1tb6PV6DBgwAJmZmer6JUuWoEqV
+KurtqKgoVKlSBXv37oW/vz/s7OwQEBCAgwcPmu17+/btaNq0KapWrQo/Pz/8+uuvUBQFy5cvLzFr
+VFQUJk+ejJSUFCiKAq1Wi6lTpwIAbty4gZEjR8LNzQ02NjZo0aIFtm7dWupxF5kzZw6efvpp2Nvb
+o1u3bli+fHmx0+yHDh1Cly5d4ODgADc3N/Tq1Qvnzp0rM1NJRowYAW9vb9ja2qJu3bqYNGkS8vPz
+1fWRkZHw8fHBhg0b0LBhQ9jb26Njx45ISkpSj9PR0RErVqwwGzc5ORlarRYxMTH3PN7Dhw+jVatW
+qFq1Kpo0aYKdO3earT99+jR69+6N6tWrQ6/Xo0uXLjh27BiAO5cgBg8eDADqsb722msYOnQotm/f
+jqioKHV50Rmyez3ni8ZUFAWbN29G+/btYWtri0WLFt3zGIgqDCG6S0hIiLzwwgvy66+/iqIocujQ
+IRERuXDhgmg0Gtm1a5eIiNy6dUsaNWokffr0kcOHD8vp06flo48+EhsbG0lMTBQRkffff18aNWpk
+Nv7KlSvF1tZWrl+/LiIiERER4unpKevXr5fk5GTZsmWLPPPMMzJ58mT1Pp6enuLk5CSRkZFy6tQp
+SUhIKDH7wYMHRVEUmTx5spw8eVLWr18vPj4+oiiKxMTEiIhIenq6ODo6ysCBAyU+Pl5iYmKkadOm
+EhQUpI6zZMkSqVKlitltRVEkKChIYmJi5MSJE9K1a1epU6eOFBYWiohIamqq2NrayogRIyQhIUF2
+7Ngh/v7+oiiKfPfddyXmzcvLkwkTJkjt2rUlIyNDLl26JDdv3hQRkd69e4uXl5ds3bpVEhMTZcyY
+MWJlZSUnTpwo9Wf3v//9T3Q6nXz22WeSlJQkUVFR4u7uLoqiSGpqqoiIxMfHi729vURGRsrJkyfl
+2LFjEhwcLPXq1ZPbt2/LrVu3Ss10N6PRKOHh4XLgwAFJSUmRjRs3iru7u0yZMkXdZsqUKWJnZydd
+u3aVuLg4+f3338Xf318CAwPVbUaOHCmdOnUyGzs8PFx8fX1LPdbo6GjRaDRSr1492bx5syQmJsqw
+YcPEzs5O0tPTRUTk0qVLUrNmTQkLC5P4+Hg5efKkvPXWW+Li4iJZWVmSn58vn3/+uSiKoh7rtWvX
+5Nq1axIYGCh9+/ZVlxcUFJTrOV+Uq2HDhrJp0yZJTk5WH3uiio6lgIopKgUiIj169JCOHTuKSPFS
+sHjxYnn66afVF8UinTp1krFjx4qISGJioiiKIgcPHlTXd+vWTfr37y8iIrm5uWJrays///yz2RhL
+ly6VatWqqbc9PT2lc+fOZWYfMGCA2YuNiMiCBQvMSkF4eLg8/fTTUlBQoG5z9OhR0Wg0smfPHhEp
+vRQcOXJEXbZ//35RFEVOnjwpIncKkJeXlxiNRnWbn376STQaTamlQERk2rRp4uXlZbYsKSlJNBqN
+/PTTT2bL/fz8ZNiwYaWO1a5dOxk8eLDZsgkTJpiVgpCQEOnXr5/ZNnl5eWJrayvr168vNVN5zZ49
+W+rVq6fenjJlilSpUkWys7PVZStXrhStViu3b98WEZHDhw+LoiiSlJQkIiKFhYXi4eEhc+fOLXU/
+RS++ixcvVpcZDAazQhkRESFt2rQxu5/RaJS6deuqYy9btkwURSk2fufOnWXo0KFmy8rznC/Kda+f
+OVFFpbP0mQqq2GbMmAFfX19s2rQJzZs3N1t38OBBXLx4EU5OTmbL8/PzYWtrCwCoX78+WrRogW+/
+/Rb+/v7IyMjAzz//jE2bNgEA4uPjcevWLfTq1ctsjMLCQuTn5yM7OxvOzs4AgJYtW5aZ9/jx43jh
+hRfMlrVp08bsssfx48fRunVr6HT///Rv2rQpnJycEB8fj+eee67EsTUaDZo2barednd3h4jg0qVL
+8PHxQUJCAlq0aGF2fbpNmzZlZi7tODQaDdq3b2+2PDAwEPv27bvn/QYMGGC27O4MBw4cwOnTp+Hg
+4GC2/Pbt2zh16tR9Z/3666+xaNEiJCcn4+bNmzAYDMUuM7m7u0Ov15vdFhFkZGTAw8MDzZs3h7+/
+PxYuXIiPP/4YmzdvRnZ2NgYNGnTPfWs0GrRu3Vq9rdVq0bJlS8THxwO48xw9ePBgsWPNy8t7oGMt
+z3O+KFeLFi3ue3wiS2MpoHvy8fHByJEjMX78eGzevNlsndFoRKNGjbBu3bpiLwJ//gU5ePBgTJ06
+FTNnzsTy5cvh6uqqvnAbjUYAwJo1a+Dj41Ns/39+IbGzsytX5oc1aUxRFLOxi/5ddAwPc9/3o6wM
+RqMRgwYNwsSJE4v93IoKWHmtXr0ao0aNwieffILAwEA4Ojpi1apVCA8PN9vu7rd3lvTYvfHGG5g0
+aRKmTZuGhQsXomfPnqhevfp95bmb0WhE586d8fnnnxc71rtf2Ms7Xnme80D5n69EFQknGlKZIiIi
+kJaWhq+++srsBScgIABnzpyBg4MD6tSpY/a/mjVrqtv169cPV69exZYtW/Dtt99iwIAB6ji+vr6w
+sbHB6dOni41Rp06d+36RbdSoEWJjY82WxcbGmo3j6+uLffv2mc0IP3r0KK5evYomTZrc1/7u3veB
+AwfMXizuzlISKysrs0mVRRkBFHv75+7du9G4ceN7Zijp+P8sICAAv//+O7y8vIo93kUvlCVlKsme
+PXvg5+eHMWPGoHnz5qhbty7Onj1b5v1K0rdvX+Tl5WHBggXYvHkzRowYUeZ9RMTszElhYSF+++03
+9fELCAhAfHw8atWqVexYiwpQUWG5+0W+pMegvM95okrLQpctqAL785yCItOnTxdbW1tRFEWdU5CX
+lydNmjSRli1byi+//CLJycmyf/9++fjjj9Vr00V69uwpzZs3F0VR5NixY2brPvjgA3FycpLPP/9c
+Tpw4IfHx8bJixQoZP368uo2np6d8+OGHZWY/dOiQaLVas4mG9erVE0VRZO/evSJyZ/KZk5OTDBgw
+QI4dOyZ79uyRpk2bSocOHdRxSppT8OfbIsXnWKSmpoqdnZ3ZRMOAgABRFEWWL19eaubVq1eLlZWV
+xMbGSlZWluTm5oqISHBwsHh5ecnPP/8siYmJ8tZbb4m1tbU6h6EkP/zwg1hZWZlNNKxVq5YoiiJp
+aWkiIpKQkCCOjo4yYMAA+e233+Ts2bOyY8cOGTNmjJw9e/aeme42b948sbOzk/Xr18vp06dlzpw5
+4uLiYnaNfsqUKeLj42N2v19//VU0Go2kpKSYLQ8LCxNra2upX79+qcdYpOjaff369WXz5s2SkJAg
+r7/+utjZ2cnFixdF5M7PulatWtKlSxfZs2ePJCcny549e2TSpEkSGxsrIiIHDhwQRVFk7dq1kpmZ
+KTdu3FCz+Pr6yunTpyUrK0sKCgrK9ZwvysXJhVQZsRRQMSWVgry8PKldu7ZotVr1RVBEJCcnR0JD
+Q8XDw0Osra3Fw8NDevbsaTYhT0Rk/fr1oiiK+Pv7l7jPRYsWSfPmzaVq1aqi1+uldevWsmDBAnW9
+l5dXuUqBiMiKFSvE29tbbGxspG3btrJq1SrRaDRy+PBhdZv9+/dLUFCQ2NraSvXq1WXgwIGSmZmp
+ri9vKfhzSRIR2b59uzRp0kRsbGykWbNm6kTDH374odS8BQUFMmDAANHr9aIoikRGRoqIyLVr1+SN
+N94QNzc3sbGxkRYtWsi2bdvKPP45c+aIh4eH2NrayosvvihfffWVKIoiOTk56jbHjh2TV199VfR6
+vdja2oqPj4+MHDlSLl++fM9MJWV/4403xNnZWS1aRbP5i5RWChRFKVYKiiZ8zpw5s8zjjI6OFkVR
+ZOPGjeLv7y82Njbi6+sr27dvN9vu3LlzMnDgQPVx9PT0lEGDBklycrK6zdixY6VGjRqiKIo6ufDM
+mTMSFBQk9vb2Zj/nsp7zRblYCqgy0ojcdc6M6DGzdOlSDBs2DNnZ2XB0dHyk+969ezc6duyI33//
+XT2l/ahNnToV8+bNQ0ZGhkX2fz82b96MXr164fz583BxcbF0HKInDucUlKFoFnNl9STmnzlzJg4f
+Pozk5GSsWrUKEyZMQHBw8CMpBAsWLEBsbCxSUlIwf/58jBgxAq1bt35khcBgMGDGjBn4448/cObM
+GSxcuBCffvophg8fft9jPcrnzq1bt5CcnIzIyEgMHDjwbykET+JzvyKp7PmfVCwFZajsT+wnMf/v
+v/+O7t27o2HDhggPD8fgwYMf2SfKpaSkoG/fvmjQoAEiIiIQFBSkvv3yUdBoNIiOjkbnzp3RuHFj
+zJ49G+Hh4fjggw/ue6xH+dz55JNP4OPjAysrq2KfgPmgnsTnfkVS2fM/qfiWRHrsREVFWWzfH3/8
+MT7++GMAwKpVqxAcHPxI96/VarFly5ZHus+/Q0REBCIiIiwdg+iJxzMFREREBADgREMiIiICwMsH
+5fLnb5erbBwcHHD9+nVLx3hglTl/Zc4OML+lVfb87u7ulo5AD4CXD4iIiAgASwERERGZsBQQERER
+AJYCIiIiMmEpICIiIgAsBURERGTCUkBEREQAWAqIiIjIhKWAiIiIALAUEBERkQlLAREREQFgKSAi
+IiITlgIiIiICwFJAREREJiwFREREBIClgIiIiExYCoiIiAgASwERERGZsBQQERERAJYCIiIiMmEp
+ICIiIgAsBURERGTCUkBEREQAWAqIiIjIhKWAiIiIALAUEBERkQlLAREREQFgKSAiIiITlgIiIiIC
+wFJAREREJiwFREREBIClgIiIiExYCoiIiAgASwERERGZsBQQERERAJYCIiIiMmEpICIiIgAsBURE
+RGTCUkBEREQAWAqIiIjIhKWAiIiIALAUEBERkQlLAREREQFgKSAiIiITlgIiIiICwFJAREREJiwF
+REREBIClgIiIiExYCoiIiAgASwERERGZsBQQERERAJYCIiIiMmEpICIiIgCAztIBKoPE7HxLR3hg
+2itXUFhYaOkYD6wy569o2V3sdHCx4d8BRFQ6loJyGP/TGUtHIPrLZrxYBy42VpaOQUQVGP9sICIi
+IgAsBURERGTCUkBEREQAWAqIiIjIhKWAiIiIALAUEBERkQlLAREREQFgKSAiIiITlgIiIiICwFJA
+REREJiwFREREBIClgIiIiExYCoiIiAgASwERERGZsBQQERERAJYCIiIiMmEpICIiIgAsBURERGTC
+UkBEREQAWAqIiIjIhKWAiIiIALAUEBERkQlLAREREQFgKSAiIiITlgIiIiICwFJAREREJiwFRERE
+BIClgIiIiExYCoiIiAgASwERERGZsBQQERERAJYCIiIiMmEpICIiIgCAztIBiIjoyWEwGFBYWGjp
+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
+S0d4YLYODrh+/bqlYzywypy/MmcHmN/SKnt+qpx4+YCIiIgAsBQQERGRCUsBERERAWApICIiIhOW
+AiIiIgJVOQuJAAAPW0lEQVTAUkBEREQmLAVEREQEgKWAiIiITFgKiIiICABLAREREZmwFBAREREA
+lgIiIiIyYSkgIiIiACwFREREZMJSQERERABYCoiIiMiEpYCIiIgAsBQQERGRCUsBERERAWApICIi
+IhOWAiIiIgLAUkBEREQmLAVEREQEgKWAiIiITFgKiIiICABLAREREZmwFBAREREAlgIiIiIyYSkg
+IiIiACwFREREZMJSQERERABYCoiIiMiEpYCIiIgAsBQQERGRCUsBERERAWApICIiIhOWAiIiIgLA
+UkBEREQmLAVEREQEgKWAiIiITFgKiIiICABLAREREZmwFBAREREAlgIiIiIyYSkgIiIiACwFRERE
+ZMJSQERERABYCoiIiMiEpYCIiIgAsBQQERGRCUsBERERAWApICIiIhOWAiIiIgLAUkBEREQmGhER
+S4cgIiIiy+OZgjKsWrXK0hH+Eua3nMqcHWB+S2N+sgSWAiIiIgLAUkBEREQmLAVl8PX1tXSEv4T5
+LacyZweY39KYnyyBEw2JiIgIAM8UEBERkQlLAREREQEAdJYOUFEdOXIES5YsgYigY8eOePXVVy0d
+6Z6ys7Mxb948XL16FRqNBs8//zxeeukl3LhxA3PmzEFmZibc3NwwduxY2NraWjpuqYxGIyZOnAi9
+Xo/x48dXqvy5ublYsGABzp8/D41GgzfffBNPPfVUpci/adMm7Ny5ExqNBrVr10ZoaCjy8vIqdPb5
+8+fj8OHDcHJywqeffgoA93y+rF27Fjt37oRWq0VISAiaNWtWobIvW7YMhw4dgk6nQ40aNRAaGloh
+swMl5y+yceNGLFu2DIsWLYK9vT2Aipef7kGomMLCQhk1apRkZGRIQUGBvPvuu3LhwgVLx7qny5cv
+y9mzZ0VE5NatW/LWW2/JhQsX5Ntvv5V169aJiMjatWtl2bJlFkxZto0bN8rcuXNl+vTpIiKVKv+8
+efNkx44dIiJiMBjk5s2blSJ/dna2hIWFSUFBgYiIzJo1S3bu3FnhsyckJMjZs2flnXfeUZeVlvn8
++fMybtw4MRgMcunSJRk1apQYjUaL5BYpOfvRo0elsLBQRESWLVsm3333nYhUvOwiJecXEcnKypJp
+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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DUR&#39;</span><span class="p">,</span> <span class="s1">&#39;FREQ&#39;</span><span class="p">,</span> <span class="s1">&#39;NRS&#39;</span><span class="p">,</span> <span class="s1">&#39;RAD&#39;</span><span class="p">,</span> <span class="s1">&#39;PIDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;PIWORK&#39;</span><span class="p">,</span> <span class="s1">&#39;PPISOC&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;PICHOR&#39;</span><span class="p">,</span> <span class="s1">&#39;LBS&#39;</span><span class="p">,</span> <span class="s1">&#39;INJ&#39;</span><span class="p">,</span> <span class="s1">&#39;EXE&#39;</span><span class="p">,</span> <span class="s1">&#39;PSY&#39;</span><span class="p">,</span> <span class="s1">&#39;UNEMP&#39;</span><span class="p">,</span> <span class="s1">&#39;OPI&#39;</span><span class="p">,</span> <span class="s1">&#39;ABD&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;JOI&#39;</span><span class="p">,</span> <span class="s1">&#39;HEA&#39;</span><span class="p">,</span> <span class="s1">&#39;FIB&#39;</span><span class="p">,</span> <span class="s1">&#39;CHOR&#39;</span><span class="p">,</span> <span class="s1">&#39;STAIR&#39;</span><span class="p">,</span> <span class="s1">&#39;W15&#39;</span><span class="p">,</span> <span class="s1">&#39;ERANDS&#39;</span><span class="p">,</span> <span class="s1">&#39;WORTHL&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;HELPL&#39;</span><span class="p">,</span> <span class="s1">&#39;DEPRES&#39;</span><span class="p">,</span> <span class="s1">&#39;HOPEL&#39;</span><span class="p">,</span> <span class="s1">&#39;SLEEPQ&#39;</span><span class="p">,</span> <span class="s1">&#39;SREFR&#39;</span><span class="p">,</span> <span class="s1">&#39;SPROB&#39;</span><span class="p">,</span> <span class="s1">&#39;SONSET&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;CAT.SAFE&#39;</span><span class="p">,</span> <span class="s1">&#39;DIS&#39;</span><span class="p">,</span> <span class="s1">&#39;LIT&#39;</span><span class="p">,</span> <span class="s1">&#39;AS&#39;</span><span class="p">,</span> <span class="s1">&#39;ETOH&#39;</span><span class="p">,</span> <span class="s1">&#39;SAHELP&#39;</span><span class="p">,</span> <span class="s1">&#39;AGE&#39;</span><span class="p">,</span> <span class="s1">&#39;SEX&#39;</span><span class="p">,</span>
+       <span class="s1">&#39;EMP&#39;</span><span class="p">,</span> <span class="s1">&#39;EDU&#39;</span><span class="p">,</span> <span class="s1">&#39;HT&#39;</span><span class="p">,</span> <span class="s1">&#39;WT&#39;</span><span class="p">,</span> <span class="s1">&#39;RACE&#39;</span><span class="p">,</span> <span class="s1">&#39;PI&#39;</span><span class="p">,</span> <span class="s1">&#39;FUN&#39;</span><span class="p">,</span> <span class="s1">&#39;DEP&#39;</span><span class="p">,</span> <span class="s1">&#39;SLEEP&#39;</span><span class="p">]</span>
+
+<span class="n">target</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;CAT.NEVER&#39;</span><span class="p">]</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;CAT.NEVER&quot;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="c1"># X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=0)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">RFE</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">rfe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">])</span>
+
+<span class="c1"># summarize the selection of the attributes</span>
+<span class="c1"># print(rfe.support_)</span>
+<span class="c1"># print(rfe.ranking_)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="n">features_top10</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top ten features:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">features_top10</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Features sorted by their rank:&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">rfe</span><span class="o">.</span><span class="n">ranking_</span><span class="p">),</span> <span class="n">features</span><span class="p">))</span> <span class="p">)</span>
+
+<span class="n">ff</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features_top10</span><span class="p">]</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+<span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">ff</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;CAT.NEVER&quot;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Cross validation scores using top 10 features&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="p">)</span>                                             
+
+<span class="c1"># The mean score and the 95% confidence interval of the score estimate are hence given by:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean accuracy using top 10 features: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Top ten features:
+[&#39;DUR&#39; &#39;FREQ&#39; &#39;RAD&#39; &#39;PICHOR&#39; &#39;UNEMP&#39; &#39;SPROB&#39; &#39;CAT.SAFE&#39; &#39;LIT&#39; &#39;AS&#39; &#39;SAHELP&#39;]
+Features sorted by their rank:
+[(1, &#39;AS&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;FREQ&#39;), (1, &#39;LIT&#39;), (1, &#39;PICHOR&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SPROB&#39;), (1, &#39;UNEMP&#39;), (2, &#39;LBS&#39;), (3, &#39;ABD&#39;), (4, &#39;DEPRES&#39;), (5, &#39;EDU&#39;), (6, &#39;DIS&#39;), (7, &#39;CHOR&#39;), (8, &#39;STAIR&#39;), (9, &#39;FUN&#39;), (10, &#39;PPISOC&#39;), (11, &#39;PIDAY&#39;), (12, &#39;ERANDS&#39;), (13, &#39;JOI&#39;), (14, &#39;W15&#39;), (15, &#39;SLEEPQ&#39;), (16, &#39;SLEEP&#39;), (17, &#39;SONSET&#39;), (18, &#39;HEA&#39;), (19, &#39;ETOH&#39;), (20, &#39;PSY&#39;), (21, &#39;EMP&#39;), (22, &#39;FIB&#39;), (23, &#39;SEX&#39;), (24, &#39;RACE&#39;), (25, &#39;HOPEL&#39;), (26, &#39;INJ&#39;), (27, &#39;OPI&#39;), (28, &#39;PI&#39;), (29, &#39;HELPL&#39;), (30, &#39;DEP&#39;), (31, &#39;NRS&#39;), (32, &#39;EXE&#39;), (33, &#39;SREFR&#39;), (34, &#39;PIWORK&#39;), (35, &#39;AGE&#39;), (36, &#39;HT&#39;), (37, &#39;WORTHL&#39;), (38, &#39;WT&#39;)]
+Model:
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class=&#39;ovr&#39;, n_jobs=1,
+          penalty=&#39;l2&#39;, random_state=None, solver=&#39;liblinear&#39;, tol=0.0001,
+          verbose=0, warm_start=False)
+Cross validation scores using top 10 features
+[ 0.76190476  0.71428571  0.76190476  0.80952381  0.61904762  0.68421053
+  0.63157895  0.63157895  0.73684211  0.52631579]
+Mean accuracy using top 10 features: 0.69 (+/- 0.16)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Accuracy is 0.69 for Logistic Regression classifier using top 10 features.</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
+<span class="c1"># X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.4, random_state=0)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">RFE</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">rfe</span> <span class="o">=</span> <span class="n">rfe</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">])</span>
+
+<span class="c1"># summarize the selection of the attributes</span>
+<span class="c1"># print(rfe.support_)</span>
+<span class="c1"># print(rfe.ranking_)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="n">features_top10</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">rfe</span><span class="o">.</span><span class="n">support_</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top ten features:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">features_top10</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Features sorted by their rank:&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">rfe</span><span class="o">.</span><span class="n">ranking_</span><span class="p">),</span> <span class="n">features</span><span class="p">))</span> <span class="p">)</span>
+
+<span class="n">ff</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features_top10</span><span class="p">]</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">ff</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+<span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">ff</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="s2">&quot;CAT.NEVER&quot;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;Cross validation scores using top 10 features&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span> <span class="p">)</span>                                             
+
+<span class="c1"># The mean score and the 95% confidence interval of the score estimate are hence given by:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean accuracy using top 10 features: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Top ten features:
+[&#39;FREQ&#39; &#39;PICHOR&#39; &#39;LBS&#39; &#39;INJ&#39; &#39;UNEMP&#39; &#39;CHOR&#39; &#39;SREFR&#39; &#39;CAT.SAFE&#39; &#39;LIT&#39; &#39;AS&#39;]
+Features sorted by their rank:
+[(1, &#39;AS&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;CHOR&#39;), (1, &#39;FREQ&#39;), (1, &#39;INJ&#39;), (1, &#39;LBS&#39;), (1, &#39;LIT&#39;), (1, &#39;PICHOR&#39;), (1, &#39;SREFR&#39;), (1, &#39;UNEMP&#39;), (2, &#39;HEA&#39;), (3, &#39;OPI&#39;), (4, &#39;FUN&#39;), (5, &#39;STAIR&#39;), (6, &#39;ETOH&#39;), (7, &#39;SEX&#39;), (8, &#39;RAD&#39;), (9, &#39;RACE&#39;), (10, &#39;ABD&#39;), (11, &#39;EXE&#39;), (12, &#39;DEPRES&#39;), (13, &#39;SLEEPQ&#39;), (14, &#39;PIWORK&#39;), (15, &#39;SLEEP&#39;), (16, &#39;W15&#39;), (17, &#39;PI&#39;), (18, &#39;EMP&#39;), (19, &#39;SPROB&#39;), (20, &#39;DIS&#39;), (21, &#39;HELPL&#39;), (22, &#39;PIDAY&#39;), (23, &#39;NRS&#39;), (24, &#39;ERANDS&#39;), (25, &#39;DUR&#39;), (26, &#39;JOI&#39;), (27, &#39;FIB&#39;), (28, &#39;PPISOC&#39;), (29, &#39;HOPEL&#39;), (30, &#39;DEP&#39;), (31, &#39;SONSET&#39;), (32, &#39;AGE&#39;), (33, &#39;PSY&#39;), (34, &#39;WORTHL&#39;), (35, &#39;EDU&#39;), (36, &#39;HT&#39;), (37, &#39;WT&#39;), (38, &#39;SAHELP&#39;)]
+Model:
+SVC(C=1, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=&#39;auto&#39;, kernel=&#39;linear&#39;,
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Cross validation scores using top 10 features
+[ 0.76190476  0.76190476  0.76190476  0.80952381  0.76190476  0.73684211
+  0.68421053  0.78947368  0.68421053  0.63157895]
+Mean accuracy using top 10 features: 0.74 (+/- 0.10)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Accuracy is 0.74 for SVM classifier using top 10 features.</em></p>
 
 </div>
 </div>
