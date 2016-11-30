@@ -23750,10 +23750,10 @@ Mean accuracy using top 10 features: 0.74 (+/- 0.10)
 
 
 
-<div id="86faae9d-e53e-41b4-8e56-b5a7a9753f43"></div>
+<div id="a4d23017-89d7-4b38-81ea-315b3ba10939"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#86faae9d-e53e-41b4-8e56-b5a7a9753f43');
+var element = $('#a4d23017-89d7-4b38-81ea-315b3ba10939');
 IPython.OutputArea.auto_scroll_threshold = 9999;
 </script>
 </div>
@@ -23766,7 +23766,7 @@ IPython.OutputArea.auto_scroll_threshold = 9999;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="prompt input_prompt">In&nbsp;[127]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DUR&#39;</span><span class="p">,</span> <span class="s1">&#39;FREQ&#39;</span><span class="p">,</span> <span class="s1">&#39;NRS&#39;</span><span class="p">,</span> <span class="s1">&#39;RAD&#39;</span><span class="p">,</span> <span class="s1">&#39;PIDAY&#39;</span><span class="p">,</span> <span class="s1">&#39;PIWORK&#39;</span><span class="p">,</span> <span class="s1">&#39;PPISOC&#39;</span><span class="p">,</span>
@@ -23816,7 +23816,7 @@ IPython.OutputArea.auto_scroll_threshold = 9999;
     <span class="c1">#print(&quot;Model:&quot;)</span>
     <span class="c1">#print(model)</span>
 
-<span class="c1">#     scores = cross_val_score(model, ff, df[target][f], cv=10)</span>
+    <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">ff</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">target</span><span class="p">][</span><span class="n">f</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="c1">#     print( &quot;Cross validation scores using top 10 features&quot;)</span>
 <span class="c1">#     print(scores ) </span>
     <span class="nb">print</span><span class="p">()</span>
@@ -23849,7 +23849,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;DEPRES&#39;), (1, &#39;HOPEL&#39;), (1, &#39;INJ&#39;), (1, &#39;JOI&#39;), (1, &#39;LBS&#39;), (1, &#39;LIT&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SLEEPQ&#39;), (2, &#39;PPISOC&#39;), (3, &#39;CAT.SAFE&#39;), (4, &#39;SONSET&#39;), (5, &#39;EXE&#39;), (6, &#39;PSY&#39;), (7, &#39;FIB&#39;), (8, &#39;SEX&#39;), (9, &#39;FREQ&#39;), (10, &#39;HELPL&#39;), (11, &#39;WORTHL&#39;), (12, &#39;EDU&#39;), (13, &#39;OPI&#39;), (14, &#39;ABD&#39;), (15, &#39;NRS&#39;), (16, &#39;STAIR&#39;), (17, &#39;W15&#39;), (18, &#39;HEA&#39;), (19, &#39;DIS&#39;), (20, &#39;PICHOR&#39;), (21, &#39;PI&#39;), (22, &#39;SPROB&#39;), (23, &#39;SLEEP&#39;), (24, &#39;SREFR&#39;), (25, &#39;RACE&#39;), (26, &#39;ERANDS&#39;), (27, &#39;PIWORK&#39;), (28, &#39;AS&#39;), (29, &#39;EMP&#39;), (30, &#39;UNEMP&#39;), (31, &#39;ETOH&#39;), (32, &#39;PIDAY&#39;), (33, &#39;DEP&#39;), (34, &#39;FUN&#39;), (35, &#39;CHOR&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting DUR using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting DUR using top 10 features: 0.60 (+/- 0.12)
 
 ****************************
 Feature: FREQ
@@ -23863,7 +23863,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;ABD&#39;), (1, &#39;AS&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;INJ&#39;), (1, &#39;LIT&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (2, &#39;RAD&#39;), (3, &#39;EXE&#39;), (4, &#39;OPI&#39;), (5, &#39;DIS&#39;), (6, &#39;PICHOR&#39;), (7, &#39;HOPEL&#39;), (8, &#39;ERANDS&#39;), (9, &#39;PPISOC&#39;), (10, &#39;ETOH&#39;), (11, &#39;SLEEPQ&#39;), (12, &#39;SREFR&#39;), (13, &#39;FIB&#39;), (14, &#39;SONSET&#39;), (15, &#39;SPROB&#39;), (16, &#39;EDU&#39;), (17, &#39;JOI&#39;), (18, &#39;CHOR&#39;), (19, &#39;DEPRES&#39;), (20, &#39;SEX&#39;), (21, &#39;FUN&#39;), (22, &#39;STAIR&#39;), (23, &#39;LBS&#39;), (24, &#39;W15&#39;), (25, &#39;WORTHL&#39;), (26, &#39;DUR&#39;), (27, &#39;SLEEP&#39;), (28, &#39;PI&#39;), (29, &#39;PIWORK&#39;), (30, &#39;HEA&#39;), (31, &#39;HELPL&#39;), (32, &#39;NRS&#39;), (33, &#39;RACE&#39;), (34, &#39;EMP&#39;), (35, &#39;AGE&#39;), (36, &#39;DEP&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting FREQ using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting FREQ using top 10 features: 0.61 (+/- 0.13)
 
 ****************************
 Feature: NRS
@@ -23877,7 +23877,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;DIS&#39;), (1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;INJ&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PIWORK&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;STAIR&#39;), (2, &#39;RAD&#39;), (3, &#39;DUR&#39;), (4, &#39;LIT&#39;), (5, &#39;OPI&#39;), (6, &#39;PPISOC&#39;), (7, &#39;FREQ&#39;), (8, &#39;JOI&#39;), (9, &#39;SEX&#39;), (10, &#39;LBS&#39;), (11, &#39;SLEEPQ&#39;), (12, &#39;FIB&#39;), (13, &#39;W15&#39;), (14, &#39;AS&#39;), (15, &#39;PICHOR&#39;), (16, &#39;UNEMP&#39;), (17, &#39;EMP&#39;), (18, &#39;SONSET&#39;), (19, &#39;HOPEL&#39;), (20, &#39;SPROB&#39;), (21, &#39;CAT.SAFE&#39;), (22, &#39;SREFR&#39;), (23, &#39;HEA&#39;), (24, &#39;DEPRES&#39;), (25, &#39;WORTHL&#39;), (26, &#39;HELPL&#39;), (27, &#39;RACE&#39;), (28, &#39;PI&#39;), (29, &#39;CHOR&#39;), (30, &#39;FUN&#39;), (31, &#39;ETOH&#39;), (32, &#39;ABD&#39;), (33, &#39;EDU&#39;), (34, &#39;SLEEP&#39;), (35, &#39;DEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting NRS using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting NRS using top 10 features: 0.24 (+/- 0.13)
 
 ****************************
 Feature: RAD
@@ -23891,7 +23891,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;AS&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;HEA&#39;), (1, &#39;HELPL&#39;), (1, &#39;JOI&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (1, &#39;UNEMP&#39;), (1, &#39;WORTHL&#39;), (2, &#39;PICHOR&#39;), (3, &#39;LIT&#39;), (4, &#39;PIDAY&#39;), (5, &#39;PPISOC&#39;), (6, &#39;PI&#39;), (7, &#39;CHOR&#39;), (8, &#39;ERANDS&#39;), (9, &#39;W15&#39;), (10, &#39;FUN&#39;), (11, &#39;RACE&#39;), (12, &#39;OPI&#39;), (13, &#39;LBS&#39;), (14, &#39;ETOH&#39;), (15, &#39;SPROB&#39;), (16, &#39;SLEEP&#39;), (17, &#39;INJ&#39;), (18, &#39;PIWORK&#39;), (19, &#39;PSY&#39;), (20, &#39;DUR&#39;), (21, &#39;FREQ&#39;), (22, &#39;HOPEL&#39;), (23, &#39;EDU&#39;), (24, &#39;STAIR&#39;), (25, &#39;NRS&#39;), (26, &#39;SONSET&#39;), (27, &#39;SREFR&#39;), (28, &#39;SLEEPQ&#39;), (29, &#39;EXE&#39;), (30, &#39;ABD&#39;), (31, &#39;DIS&#39;), (32, &#39;DEPRES&#39;), (33, &#39;DEP&#39;), (34, &#39;EMP&#39;), (35, &#39;FIB&#39;), (36, &#39;HT&#39;), (37, &#39;WT&#39;), (38, &#39;AGE&#39;)]
 
-Mean cross-validated accuracy for predicting RAD using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting RAD using top 10 features: 0.72 (+/- 0.21)
 
 ****************************
 Feature: PIDAY
@@ -23905,7 +23905,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;LIT&#39;), (1, &#39;PI&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PIWORK&#39;), (1, &#39;PPISOC&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;SONSET&#39;), (2, &#39;INJ&#39;), (3, &#39;SPROB&#39;), (4, &#39;NRS&#39;), (5, &#39;LBS&#39;), (6, &#39;DIS&#39;), (7, &#39;EXE&#39;), (8, &#39;ERANDS&#39;), (9, &#39;RAD&#39;), (10, &#39;ABD&#39;), (11, &#39;SREFR&#39;), (12, &#39;OPI&#39;), (13, &#39;W15&#39;), (14, &#39;FUN&#39;), (15, &#39;CHOR&#39;), (16, &#39;HEA&#39;), (17, &#39;HOPEL&#39;), (18, &#39;DEPRES&#39;), (19, &#39;EDU&#39;), (20, &#39;FREQ&#39;), (21, &#39;JOI&#39;), (22, &#39;SEX&#39;), (23, &#39;UNEMP&#39;), (24, &#39;PSY&#39;), (25, &#39;ETOH&#39;), (26, &#39;AS&#39;), (27, &#39;STAIR&#39;), (28, &#39;WORTHL&#39;), (29, &#39;DEP&#39;), (30, &#39;RACE&#39;), (31, &#39;FIB&#39;), (32, &#39;HELPL&#39;), (33, &#39;EMP&#39;), (34, &#39;SLEEP&#39;), (35, &#39;CAT.NEVER&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting PIDAY using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting PIDAY using top 10 features: 0.66 (+/- 0.16)
 
 ****************************
 Feature: PIWORK
@@ -23919,7 +23919,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;DUR&#39;), (1, &#39;LBS&#39;), (1, &#39;LIT&#39;), (1, &#39;OPI&#39;), (1, &#39;PI&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PPISOC&#39;), (1, &#39;SAHELP&#39;), (2, &#39;PSY&#39;), (3, &#39;FREQ&#39;), (4, &#39;ERANDS&#39;), (5, &#39;CAT.SAFE&#39;), (6, &#39;INJ&#39;), (7, &#39;CHOR&#39;), (8, &#39;RAD&#39;), (9, &#39;AS&#39;), (10, &#39;ETOH&#39;), (11, &#39;NRS&#39;), (12, &#39;SREFR&#39;), (13, &#39;ABD&#39;), (14, &#39;EDU&#39;), (15, &#39;SPROB&#39;), (16, &#39;HEA&#39;), (17, &#39;SLEEPQ&#39;), (18, &#39;HELPL&#39;), (19, &#39;WORTHL&#39;), (20, &#39;DEPRES&#39;), (21, &#39;W15&#39;), (22, &#39;SEX&#39;), (23, &#39;FIB&#39;), (24, &#39;JOI&#39;), (25, &#39;RACE&#39;), (26, &#39;EXE&#39;), (27, &#39;HOPEL&#39;), (28, &#39;SONSET&#39;), (29, &#39;DIS&#39;), (30, &#39;SLEEP&#39;), (31, &#39;DEP&#39;), (32, &#39;UNEMP&#39;), (33, &#39;EMP&#39;), (34, &#39;FUN&#39;), (35, &#39;STAIR&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting PIWORK using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting PIWORK using top 10 features: 0.65 (+/- 0.21)
 
 ****************************
 Feature: PPISOC
@@ -23932,7 +23932,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;DIS&#39;), (1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;FREQ&#39;), (1, &#39;INJ&#39;), (1, &#39;PI&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PIWORK&#39;), (1, &#39;SAHELP&#39;), (2, &#39;SPROB&#39;), (3, &#39;SEX&#39;), (4, &#39;ETOH&#39;), (5, &#39;RAD&#39;), (6, &#39;UNEMP&#39;), (7, &#39;OPI&#39;), (8, &#39;CAT.NEVER&#39;), (9, &#39;CAT.SAFE&#39;), (10, &#39;LIT&#39;), (11, &#39;W15&#39;), (12, &#39;SREFR&#39;), (13, &#39;WORTHL&#39;), (14, &#39;PSY&#39;), (15, &#39;DUR&#39;), (16, &#39;ABD&#39;), (17, &#39;HEA&#39;), (18, &#39;FIB&#39;), (19, &#39;HELPL&#39;), (20, &#39;LBS&#39;), (21, &#39;NRS&#39;), (22, &#39;DEPRES&#39;), (23, &#39;DEP&#39;), (24, &#39;CHOR&#39;), (25, &#39;RACE&#39;), (26, &#39;SLEEPQ&#39;), (27, &#39;EDU&#39;), (28, &#39;JOI&#39;), (29, &#39;EMP&#39;), (30, &#39;STAIR&#39;), (31, &#39;SONSET&#39;), (32, &#39;SLEEP&#39;), (33, &#39;AS&#39;), (34, &#39;FUN&#39;), (35, &#39;HOPEL&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting PPISOC using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting PPISOC using top 10 features: 0.52 (+/- 0.25)
 
 ****************************
 Feature: PICHOR
@@ -23946,7 +23946,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;ERANDS&#39;), (1, &#39;FREQ&#39;), (1, &#39;LIT&#39;), (1, &#39;PI&#39;), (1, &#39;PIWORK&#39;), (1, &#39;PPISOC&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SREFR&#39;), (2, &#39;PIDAY&#39;), (3, &#39;PSY&#39;), (4, &#39;EXE&#39;), (5, &#39;JOI&#39;), (6, &#39;ABD&#39;), (7, &#39;AS&#39;), (8, &#39;ETOH&#39;), (9, &#39;FIB&#39;), (10, &#39;RAD&#39;), (11, &#39;STAIR&#39;), (12, &#39;OPI&#39;), (13, &#39;EDU&#39;), (14, &#39;CHOR&#39;), (15, &#39;SLEEPQ&#39;), (16, &#39;UNEMP&#39;), (17, &#39;DIS&#39;), (18, &#39;HEA&#39;), (19, &#39;DEPRES&#39;), (20, &#39;SEX&#39;), (21, &#39;LBS&#39;), (22, &#39;HOPEL&#39;), (23, &#39;NRS&#39;), (24, &#39;HELPL&#39;), (25, &#39;SONSET&#39;), (26, &#39;WORTHL&#39;), (27, &#39;CAT.NEVER&#39;), (28, &#39;W15&#39;), (29, &#39;EMP&#39;), (30, &#39;INJ&#39;), (31, &#39;SPROB&#39;), (32, &#39;RACE&#39;), (33, &#39;SLEEP&#39;), (34, &#39;FUN&#39;), (35, &#39;DEP&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting PICHOR using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting PICHOR using top 10 features: 0.65 (+/- 0.26)
 
 ****************************
 Feature: LBS
@@ -23959,7 +23959,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.SAFE&#39;), (1, &#39;DIS&#39;), (1, &#39;INJ&#39;), (1, &#39;JOI&#39;), (1, &#39;OPI&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PIWORK&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (2, &#39;W15&#39;), (3, &#39;LIT&#39;), (4, &#39;HEA&#39;), (5, &#39;FIB&#39;), (6, &#39;SREFR&#39;), (7, &#39;SONSET&#39;), (8, &#39;CHOR&#39;), (9, &#39;ETOH&#39;), (10, &#39;RACE&#39;), (11, &#39;DUR&#39;), (12, &#39;SEX&#39;), (13, &#39;PPISOC&#39;), (14, &#39;FREQ&#39;), (15, &#39;CAT.NEVER&#39;), (16, &#39;DEPRES&#39;), (17, &#39;HELPL&#39;), (18, &#39;AS&#39;), (19, &#39;WORTHL&#39;), (20, &#39;EXE&#39;), (21, &#39;RAD&#39;), (22, &#39;PICHOR&#39;), (23, &#39;STAIR&#39;), (24, &#39;SLEEPQ&#39;), (25, &#39;HOPEL&#39;), (26, &#39;ERANDS&#39;), (27, &#39;FUN&#39;), (28, &#39;EMP&#39;), (29, &#39;SPROB&#39;), (30, &#39;SLEEP&#39;), (31, &#39;EDU&#39;), (32, &#39;DEP&#39;), (33, &#39;PI&#39;), (34, &#39;NRS&#39;), (35, &#39;ABD&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting LBS using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting LBS using top 10 features: 0.86 (+/- 0.08)
 
 ****************************
 Feature: INJ
@@ -23972,7 +23972,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;DIS&#39;), (1, &#39;FIB&#39;), (1, &#39;FREQ&#39;), (1, &#39;LBS&#39;), (1, &#39;LIT&#39;), (1, &#39;OPI&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (1, &#39;STAIR&#39;), (2, &#39;PPISOC&#39;), (3, &#39;CHOR&#39;), (4, &#39;ETOH&#39;), (5, &#39;UNEMP&#39;), (6, &#39;JOI&#39;), (7, &#39;ABD&#39;), (8, &#39;AS&#39;), (9, &#39;RAD&#39;), (10, &#39;SONSET&#39;), (11, &#39;CAT.SAFE&#39;), (12, &#39;SLEEPQ&#39;), (13, &#39;EXE&#39;), (14, &#39;PIWORK&#39;), (15, &#39;PI&#39;), (16, &#39;SPROB&#39;), (17, &#39;W15&#39;), (18, &#39;ERANDS&#39;), (19, &#39;HELPL&#39;), (20, &#39;WORTHL&#39;), (21, &#39;DUR&#39;), (22, &#39;PIDAY&#39;), (23, &#39;CAT.NEVER&#39;), (24, &#39;PICHOR&#39;), (25, &#39;EMP&#39;), (26, &#39;SREFR&#39;), (27, &#39;SLEEP&#39;), (28, &#39;HEA&#39;), (29, &#39;EDU&#39;), (30, &#39;NRS&#39;), (31, &#39;HOPEL&#39;), (32, &#39;DEP&#39;), (33, &#39;DEPRES&#39;), (34, &#39;RACE&#39;), (35, &#39;HT&#39;), (36, &#39;AGE&#39;), (37, &#39;FUN&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting INJ using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting INJ using top 10 features: 0.76 (+/- 0.13)
 
 ****************************
 Feature: EXE
@@ -23985,7 +23985,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;ABD&#39;), (1, &#39;DIS&#39;), (1, &#39;OPI&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PSY&#39;), (1, &#39;SEX&#39;), (1, &#39;STAIR&#39;), (1, &#39;UNEMP&#39;), (1, &#39;W15&#39;), (2, &#39;AS&#39;), (3, &#39;INJ&#39;), (4, &#39;ERANDS&#39;), (5, &#39;RAD&#39;), (6, &#39;SAHELP&#39;), (7, &#39;LBS&#39;), (8, &#39;EDU&#39;), (9, &#39;LIT&#39;), (10, &#39;ETOH&#39;), (11, &#39;NRS&#39;), (12, &#39;PPISOC&#39;), (13, &#39;PI&#39;), (14, &#39;FIB&#39;), (15, &#39;CAT.SAFE&#39;), (16, &#39;DEPRES&#39;), (17, &#39;PIWORK&#39;), (18, &#39;WORTHL&#39;), (19, &#39;SREFR&#39;), (20, &#39;SLEEPQ&#39;), (21, &#39;SLEEP&#39;), (22, &#39;SONSET&#39;), (23, &#39;CHOR&#39;), (24, &#39;CAT.NEVER&#39;), (25, &#39;JOI&#39;), (26, &#39;FUN&#39;), (27, &#39;RACE&#39;), (28, &#39;EMP&#39;), (29, &#39;SPROB&#39;), (30, &#39;DUR&#39;), (31, &#39;HELPL&#39;), (32, &#39;DEP&#39;), (33, &#39;HEA&#39;), (34, &#39;HOPEL&#39;), (35, &#39;FREQ&#39;), (36, &#39;HT&#39;), (37, &#39;WT&#39;), (38, &#39;AGE&#39;)]
 
-Mean cross-validated accuracy for predicting EXE using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting EXE using top 10 features: 0.82 (+/- 0.06)
 
 ****************************
 Feature: PSY
@@ -23998,7 +23998,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;AS&#39;), (1, &#39;DIS&#39;), (1, &#39;ERANDS&#39;), (1, &#39;ETOH&#39;), (1, &#39;EXE&#39;), (1, &#39;FIB&#39;), (1, &#39;INJ&#39;), (1, &#39;LBS&#39;), (1, &#39;PIWORK&#39;), (1, &#39;SAHELP&#39;), (2, &#39;LIT&#39;), (3, &#39;OPI&#39;), (4, &#39;PICHOR&#39;), (5, &#39;CHOR&#39;), (6, &#39;SLEEPQ&#39;), (7, &#39;FREQ&#39;), (8, &#39;PPISOC&#39;), (9, &#39;PI&#39;), (10, &#39;STAIR&#39;), (11, &#39;CAT.SAFE&#39;), (12, &#39;HOPEL&#39;), (13, &#39;EDU&#39;), (14, &#39;SPROB&#39;), (15, &#39;SONSET&#39;), (16, &#39;ABD&#39;), (17, &#39;DUR&#39;), (18, &#39;JOI&#39;), (19, &#39;NRS&#39;), (20, &#39;SREFR&#39;), (21, &#39;EMP&#39;), (22, &#39;CAT.NEVER&#39;), (23, &#39;WORTHL&#39;), (24, &#39;SEX&#39;), (25, &#39;RACE&#39;), (26, &#39;UNEMP&#39;), (27, &#39;HELPL&#39;), (28, &#39;DEP&#39;), (29, &#39;HEA&#39;), (30, &#39;W15&#39;), (31, &#39;PIDAY&#39;), (32, &#39;DEPRES&#39;), (33, &#39;FUN&#39;), (34, &#39;SLEEP&#39;), (35, &#39;AGE&#39;), (36, &#39;RAD&#39;), (37, &#39;WT&#39;), (38, &#39;HT&#39;)]
 
-Mean cross-validated accuracy for predicting PSY using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting PSY using top 10 features: 0.83 (+/- 0.14)
 
 ****************************
 Feature: UNEMP
@@ -24011,7 +24011,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;AS&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DIS&#39;), (1, &#39;FREQ&#39;), (1, &#39;HOPEL&#39;), (1, &#39;LBS&#39;), (1, &#39;LIT&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;W15&#39;), (2, &#39;SREFR&#39;), (3, &#39;SPROB&#39;), (4, &#39;RACE&#39;), (5, &#39;INJ&#39;), (6, &#39;EMP&#39;), (7, &#39;DEPRES&#39;), (8, &#39;WORTHL&#39;), (9, &#39;JOI&#39;), (10, &#39;CAT.NEVER&#39;), (11, &#39;PICHOR&#39;), (12, &#39;PI&#39;), (13, &#39;OPI&#39;), (14, &#39;STAIR&#39;), (15, &#39;NRS&#39;), (16, &#39;PIWORK&#39;), (17, &#39;EXE&#39;), (18, &#39;EDU&#39;), (19, &#39;FUN&#39;), (20, &#39;SLEEPQ&#39;), (21, &#39;SONSET&#39;), (22, &#39;PPISOC&#39;), (23, &#39;SEX&#39;), (24, &#39;PSY&#39;), (25, &#39;ERANDS&#39;), (26, &#39;DEP&#39;), (27, &#39;PIDAY&#39;), (28, &#39;ABD&#39;), (29, &#39;AGE&#39;), (30, &#39;HEA&#39;), (31, &#39;FIB&#39;), (32, &#39;HT&#39;), (33, &#39;ETOH&#39;), (34, &#39;CHOR&#39;), (35, &#39;WT&#39;), (36, &#39;SLEEP&#39;), (37, &#39;DUR&#39;), (38, &#39;HELPL&#39;)]
 
-Mean cross-validated accuracy for predicting UNEMP using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting UNEMP using top 10 features: 0.85 (+/- 0.12)
 
 ****************************
 Feature: OPI
@@ -24024,7 +24024,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CHOR&#39;), (1, &#39;DIS&#39;), (1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;FREQ&#39;), (1, &#39;FUN&#39;), (1, &#39;INJ&#39;), (1, &#39;LIT&#39;), (1, &#39;PSY&#39;), (1, &#39;RAD&#39;), (2, &#39;SEX&#39;), (3, &#39;PIDAY&#39;), (4, &#39;PICHOR&#39;), (5, &#39;CAT.SAFE&#39;), (6, &#39;SPROB&#39;), (7, &#39;SONSET&#39;), (8, &#39;STAIR&#39;), (9, &#39;DUR&#39;), (10, &#39;PIWORK&#39;), (11, &#39;W15&#39;), (12, &#39;SREFR&#39;), (13, &#39;LBS&#39;), (14, &#39;JOI&#39;), (15, &#39;ABD&#39;), (16, &#39;SLEEPQ&#39;), (17, &#39;WORTHL&#39;), (18, &#39;ETOH&#39;), (19, &#39;SAHELP&#39;), (20, &#39;EDU&#39;), (21, &#39;NRS&#39;), (22, &#39;HOPEL&#39;), (23, &#39;PPISOC&#39;), (24, &#39;PI&#39;), (25, &#39;HELPL&#39;), (26, &#39;DEP&#39;), (27, &#39;DEPRES&#39;), (28, &#39;SLEEP&#39;), (29, &#39;UNEMP&#39;), (30, &#39;RACE&#39;), (31, &#39;HEA&#39;), (32, &#39;CAT.NEVER&#39;), (33, &#39;FIB&#39;), (34, &#39;AS&#39;), (35, &#39;HT&#39;), (36, &#39;WT&#39;), (37, &#39;EMP&#39;), (38, &#39;AGE&#39;)]
 
-Mean cross-validated accuracy for predicting OPI using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting OPI using top 10 features: 0.71 (+/- 0.23)
 
 ****************************
 Feature: ABD
@@ -24037,7 +24037,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;FREQ&#39;), (1, &#39;HEA&#39;), (1, &#39;OPI&#39;), (1, &#39;PSY&#39;), (1, &#39;SEX&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;W15&#39;), (2, &#39;PICHOR&#39;), (3, &#39;FIB&#39;), (4, &#39;CAT.SAFE&#39;), (5, &#39;HELPL&#39;), (6, &#39;WORTHL&#39;), (7, &#39;STAIR&#39;), (8, &#39;PIDAY&#39;), (9, &#39;DUR&#39;), (10, &#39;SPROB&#39;), (11, &#39;JOI&#39;), (12, &#39;LBS&#39;), (13, &#39;LIT&#39;), (14, &#39;EDU&#39;), (15, &#39;INJ&#39;), (16, &#39;PIWORK&#39;), (17, &#39;PPISOC&#39;), (18, &#39;CHOR&#39;), (19, &#39;FUN&#39;), (20, &#39;EMP&#39;), (21, &#39;DIS&#39;), (22, &#39;ETOH&#39;), (23, &#39;SAHELP&#39;), (24, &#39;AS&#39;), (25, &#39;DEPRES&#39;), (26, &#39;HOPEL&#39;), (27, &#39;PI&#39;), (28, &#39;RACE&#39;), (29, &#39;RAD&#39;), (30, &#39;SREFR&#39;), (31, &#39;SONSET&#39;), (32, &#39;UNEMP&#39;), (33, &#39;NRS&#39;), (34, &#39;HT&#39;), (35, &#39;SLEEP&#39;), (36, &#39;DEP&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting ABD using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting ABD using top 10 features: 0.62 (+/- 0.21)
 
 ****************************
 Feature: JOI
@@ -24050,7 +24050,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;EXE&#39;), (1, &#39;FIB&#39;), (1, &#39;LBS&#39;), (1, &#39;LIT&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PIWORK&#39;), (1, &#39;PSY&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;STAIR&#39;), (2, &#39;W15&#39;), (3, &#39;UNEMP&#39;), (4, &#39;SEX&#39;), (5, &#39;AS&#39;), (6, &#39;CAT.SAFE&#39;), (7, &#39;CAT.NEVER&#39;), (8, &#39;WORTHL&#39;), (9, &#39;HELPL&#39;), (10, &#39;ERANDS&#39;), (11, &#39;SREFR&#39;), (12, &#39;SPROB&#39;), (13, &#39;SLEEPQ&#39;), (14, &#39;CHOR&#39;), (15, &#39;FUN&#39;), (16, &#39;PI&#39;), (17, &#39;PICHOR&#39;), (18, &#39;SLEEP&#39;), (19, &#39;SONSET&#39;), (20, &#39;HEA&#39;), (21, &#39;DIS&#39;), (22, &#39;ABD&#39;), (23, &#39;NRS&#39;), (24, &#39;OPI&#39;), (25, &#39;DUR&#39;), (26, &#39;FREQ&#39;), (27, &#39;INJ&#39;), (28, &#39;ETOH&#39;), (29, &#39;EDU&#39;), (30, &#39;RACE&#39;), (31, &#39;PPISOC&#39;), (32, &#39;HOPEL&#39;), (33, &#39;EMP&#39;), (34, &#39;DEPRES&#39;), (35, &#39;DEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting JOI using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting JOI using top 10 features: 0.53 (+/- 0.10)
 
 ****************************
 Feature: HEA
@@ -24064,7 +24064,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;ABD&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DIS&#39;), (1, &#39;ERANDS&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PSY&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (2, &#39;FIB&#39;), (3, &#39;SLEEPQ&#39;), (4, &#39;SPROB&#39;), (5, &#39;SEX&#39;), (6, &#39;W15&#39;), (7, &#39;DUR&#39;), (8, &#39;SREFR&#39;), (9, &#39;WORTHL&#39;), (10, &#39;EXE&#39;), (11, &#39;STAIR&#39;), (12, &#39;LBS&#39;), (13, &#39;JOI&#39;), (14, &#39;HELPL&#39;), (15, &#39;PPISOC&#39;), (16, &#39;PIWORK&#39;), (17, &#39;AS&#39;), (18, &#39;DEPRES&#39;), (19, &#39;ETOH&#39;), (20, &#39;CHOR&#39;), (21, &#39;FUN&#39;), (22, &#39;PICHOR&#39;), (23, &#39;FREQ&#39;), (24, &#39;HOPEL&#39;), (25, &#39;SONSET&#39;), (26, &#39;LIT&#39;), (27, &#39;NRS&#39;), (28, &#39;OPI&#39;), (29, &#39;EMP&#39;), (30, &#39;RACE&#39;), (31, &#39;INJ&#39;), (32, &#39;DEP&#39;), (33, &#39;SLEEP&#39;), (34, &#39;PI&#39;), (35, &#39;AGE&#39;), (36, &#39;EDU&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting HEA using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting HEA using top 10 features: 0.56 (+/- 0.24)
 
 ****************************
 Feature: FIB
@@ -24077,7 +24077,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;AS&#39;), (1, &#39;DIS&#39;), (1, &#39;ETOH&#39;), (1, &#39;HEA&#39;), (1, &#39;INJ&#39;), (1, &#39;JOI&#39;), (1, &#39;LIT&#39;), (1, &#39;PPISOC&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (2, &#39;SEX&#39;), (3, &#39;FREQ&#39;), (4, &#39;EDU&#39;), (5, &#39;SPROB&#39;), (6, &#39;W15&#39;), (7, &#39;RAD&#39;), (8, &#39;CAT.NEVER&#39;), (9, &#39;ABD&#39;), (10, &#39;EXE&#39;), (11, &#39;PIWORK&#39;), (12, &#39;PIDAY&#39;), (13, &#39;LBS&#39;), (14, &#39;CHOR&#39;), (15, &#39;FUN&#39;), (16, &#39;STAIR&#39;), (17, &#39;PICHOR&#39;), (18, &#39;PI&#39;), (19, &#39;HOPEL&#39;), (20, &#39;DEPRES&#39;), (21, &#39;ERANDS&#39;), (22, &#39;EMP&#39;), (23, &#39;SLEEPQ&#39;), (24, &#39;HELPL&#39;), (25, &#39;SREFR&#39;), (26, &#39;SLEEP&#39;), (27, &#39;SONSET&#39;), (28, &#39;CAT.SAFE&#39;), (29, &#39;UNEMP&#39;), (30, &#39;WORTHL&#39;), (31, &#39;DUR&#39;), (32, &#39;RACE&#39;), (33, &#39;OPI&#39;), (34, &#39;DEP&#39;), (35, &#39;NRS&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting FIB using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting FIB using top 10 features: 0.68 (+/- 0.13)
 
 ****************************
 Feature: CHOR
@@ -24091,7 +24091,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;DUR&#39;), (1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;FUN&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;STAIR&#39;), (1, &#39;UNEMP&#39;), (1, &#39;W15&#39;), (2, &#39;RAD&#39;), (3, &#39;JOI&#39;), (4, &#39;FREQ&#39;), (5, &#39;INJ&#39;), (6, &#39;HEA&#39;), (7, &#39;PIDAY&#39;), (8, &#39;LIT&#39;), (9, &#39;SREFR&#39;), (10, &#39;PICHOR&#39;), (11, &#39;SEX&#39;), (12, &#39;SONSET&#39;), (13, &#39;EMP&#39;), (14, &#39;OPI&#39;), (15, &#39;SLEEPQ&#39;), (16, &#39;ETOH&#39;), (17, &#39;FIB&#39;), (18, &#39;LBS&#39;), (19, &#39;AS&#39;), (20, &#39;DEPRES&#39;), (21, &#39;HELPL&#39;), (22, &#39;WORTHL&#39;), (23, &#39;DIS&#39;), (24, &#39;SPROB&#39;), (25, &#39;HOPEL&#39;), (26, &#39;PPISOC&#39;), (27, &#39;PIWORK&#39;), (28, &#39;CAT.SAFE&#39;), (29, &#39;EDU&#39;), (30, &#39;PI&#39;), (31, &#39;ABD&#39;), (32, &#39;DEP&#39;), (33, &#39;NRS&#39;), (34, &#39;SLEEP&#39;), (35, &#39;RACE&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting CHOR using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting CHOR using top 10 features: 0.71 (+/- 0.23)
 
 ****************************
 Feature: STAIR
@@ -24104,7 +24104,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;ABD&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;CHOR&#39;), (1, &#39;DIS&#39;), (1, &#39;FUN&#39;), (1, &#39;JOI&#39;), (1, &#39;PPISOC&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;W15&#39;), (2, &#39;EDU&#39;), (3, &#39;PIDAY&#39;), (4, &#39;LBS&#39;), (5, &#39;PIWORK&#39;), (6, &#39;PSY&#39;), (7, &#39;SEX&#39;), (8, &#39;HEA&#39;), (9, &#39;SPROB&#39;), (10, &#39;OPI&#39;), (11, &#39;INJ&#39;), (12, &#39;CAT.SAFE&#39;), (13, &#39;DUR&#39;), (14, &#39;SREFR&#39;), (15, &#39;ERANDS&#39;), (16, &#39;EXE&#39;), (17, &#39;AS&#39;), (18, &#39;ETOH&#39;), (19, &#39;FREQ&#39;), (20, &#39;UNEMP&#39;), (21, &#39;SONSET&#39;), (22, &#39;NRS&#39;), (23, &#39;HELPL&#39;), (24, &#39;FIB&#39;), (25, &#39;EMP&#39;), (26, &#39;WORTHL&#39;), (27, &#39;PICHOR&#39;), (28, &#39;PI&#39;), (29, &#39;SLEEPQ&#39;), (30, &#39;LIT&#39;), (31, &#39;HOPEL&#39;), (32, &#39;DEP&#39;), (33, &#39;DEPRES&#39;), (34, &#39;SLEEP&#39;), (35, &#39;RACE&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting STAIR using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting STAIR using top 10 features: 0.59 (+/- 0.23)
 
 ****************************
 Feature: W15
@@ -24118,7 +24118,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.SAFE&#39;), (1, &#39;EDU&#39;), (1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;HEA&#39;), (1, &#39;INJ&#39;), (1, &#39;LBS&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (1, &#39;WORTHL&#39;), (2, &#39;CAT.NEVER&#39;), (3, &#39;PIDAY&#39;), (4, &#39;FREQ&#39;), (5, &#39;CHOR&#39;), (6, &#39;FUN&#39;), (7, &#39;STAIR&#39;), (8, &#39;PPISOC&#39;), (9, &#39;DUR&#39;), (10, &#39;DIS&#39;), (11, &#39;HELPL&#39;), (12, &#39;RAD&#39;), (13, &#39;SREFR&#39;), (14, &#39;SPROB&#39;), (15, &#39;AS&#39;), (16, &#39;OPI&#39;), (17, &#39;SEX&#39;), (18, &#39;LIT&#39;), (19, &#39;JOI&#39;), (20, &#39;EMP&#39;), (21, &#39;SLEEPQ&#39;), (22, &#39;FIB&#39;), (23, &#39;ABD&#39;), (24, &#39;HOPEL&#39;), (25, &#39;PSY&#39;), (26, &#39;DEP&#39;), (27, &#39;SONSET&#39;), (28, &#39;NRS&#39;), (29, &#39;RACE&#39;), (30, &#39;PICHOR&#39;), (31, &#39;PIWORK&#39;), (32, &#39;PI&#39;), (33, &#39;DEPRES&#39;), (34, &#39;SLEEP&#39;), (35, &#39;ETOH&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting W15 using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting W15 using top 10 features: 0.52 (+/- 0.23)
 
 ****************************
 Feature: ERANDS
@@ -24131,7 +24131,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;CHOR&#39;), (1, &#39;DUR&#39;), (1, &#39;FIB&#39;), (1, &#39;LIT&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;W15&#39;), (2, &#39;LBS&#39;), (3, &#39;EXE&#39;), (4, &#39;FUN&#39;), (5, &#39;STAIR&#39;), (6, &#39;UNEMP&#39;), (7, &#39;HEA&#39;), (8, &#39;RAD&#39;), (9, &#39;EDU&#39;), (10, &#39;INJ&#39;), (11, &#39;OPI&#39;), (12, &#39;FREQ&#39;), (13, &#39;EMP&#39;), (14, &#39;SPROB&#39;), (15, &#39;ABD&#39;), (16, &#39;CAT.SAFE&#39;), (17, &#39;HELPL&#39;), (18, &#39;HOPEL&#39;), (19, &#39;DEPRES&#39;), (20, &#39;PICHOR&#39;), (21, &#39;AS&#39;), (22, &#39;ETOH&#39;), (23, &#39;SREFR&#39;), (24, &#39;PIDAY&#39;), (25, &#39;PPISOC&#39;), (26, &#39;JOI&#39;), (27, &#39;SLEEP&#39;), (28, &#39;DIS&#39;), (29, &#39;PIWORK&#39;), (30, &#39;RACE&#39;), (31, &#39;WORTHL&#39;), (32, &#39;SONSET&#39;), (33, &#39;PI&#39;), (34, &#39;NRS&#39;), (35, &#39;AGE&#39;), (36, &#39;DEP&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting ERANDS using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting ERANDS using top 10 features: 0.53 (+/- 0.13)
 
 ****************************
 Feature: WORTHL
@@ -24145,7 +24145,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;ABD&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;DEP&#39;), (1, &#39;DEPRES&#39;), (1, &#39;DIS&#39;), (1, &#39;FREQ&#39;), (1, &#39;HOPEL&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (2, &#39;CAT.SAFE&#39;), (3, &#39;DUR&#39;), (4, &#39;FIB&#39;), (5, &#39;LIT&#39;), (6, &#39;RAD&#39;), (7, &#39;AS&#39;), (8, &#39;ETOH&#39;), (9, &#39;EMP&#39;), (10, &#39;HEA&#39;), (11, &#39;SREFR&#39;), (12, &#39;RACE&#39;), (13, &#39;HELPL&#39;), (14, &#39;INJ&#39;), (15, &#39;SONSET&#39;), (16, &#39;JOI&#39;), (17, &#39;ERANDS&#39;), (18, &#39;PICHOR&#39;), (19, &#39;PIDAY&#39;), (20, &#39;LBS&#39;), (21, &#39;SPROB&#39;), (22, &#39;PIWORK&#39;), (23, &#39;SLEEP&#39;), (24, &#39;PPISOC&#39;), (25, &#39;EXE&#39;), (26, &#39;OPI&#39;), (27, &#39;SLEEPQ&#39;), (28, &#39;STAIR&#39;), (29, &#39;W15&#39;), (30, &#39;EDU&#39;), (31, &#39;PI&#39;), (32, &#39;SEX&#39;), (33, &#39;FUN&#39;), (34, &#39;CHOR&#39;), (35, &#39;NRS&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting WORTHL using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting WORTHL using top 10 features: 0.64 (+/- 0.12)
 
 ****************************
 Feature: HELPL
@@ -24159,7 +24159,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;AS&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DEP&#39;), (1, &#39;DEPRES&#39;), (1, &#39;DIS&#39;), (1, &#39;ERANDS&#39;), (1, &#39;FREQ&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (2, &#39;DUR&#39;), (3, &#39;WORTHL&#39;), (4, &#39;INJ&#39;), (5, &#39;ABD&#39;), (6, &#39;ETOH&#39;), (7, &#39;JOI&#39;), (8, &#39;UNEMP&#39;), (9, &#39;LBS&#39;), (10, &#39;LIT&#39;), (11, &#39;HOPEL&#39;), (12, &#39;HEA&#39;), (13, &#39;PIWORK&#39;), (14, &#39;PICHOR&#39;), (15, &#39;PIDAY&#39;), (16, &#39;STAIR&#39;), (17, &#39;EMP&#39;), (18, &#39;W15&#39;), (19, &#39;SLEEPQ&#39;), (20, &#39;OPI&#39;), (21, &#39;PPISOC&#39;), (22, &#39;SEX&#39;), (23, &#39;PSY&#39;), (24, &#39;SPROB&#39;), (25, &#39;EXE&#39;), (26, &#39;NRS&#39;), (27, &#39;EDU&#39;), (28, &#39;SONSET&#39;), (29, &#39;SREFR&#39;), (30, &#39;SLEEP&#39;), (31, &#39;CHOR&#39;), (32, &#39;RACE&#39;), (33, &#39;FUN&#39;), (34, &#39;PI&#39;), (35, &#39;FIB&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting HELPL using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting HELPL using top 10 features: 0.60 (+/- 0.23)
 
 ****************************
 Feature: DEPRES
@@ -24173,7 +24173,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;AS&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DEP&#39;), (1, &#39;DUR&#39;), (1, &#39;FIB&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (1, &#39;WORTHL&#39;), (2, &#39;HOPEL&#39;), (3, &#39;EXE&#39;), (4, &#39;ABD&#39;), (5, &#39;SEX&#39;), (6, &#39;FREQ&#39;), (7, &#39;ERANDS&#39;), (8, &#39;LBS&#39;), (9, &#39;DIS&#39;), (10, &#39;INJ&#39;), (11, &#39;JOI&#39;), (12, &#39;PIWORK&#39;), (13, &#39;PIDAY&#39;), (14, &#39;SLEEPQ&#39;), (15, &#39;SPROB&#39;), (16, &#39;HEA&#39;), (17, &#39;PICHOR&#39;), (18, &#39;RAD&#39;), (19, &#39;SONSET&#39;), (20, &#39;PPISOC&#39;), (21, &#39;PI&#39;), (22, &#39;EMP&#39;), (23, &#39;HELPL&#39;), (24, &#39;SREFR&#39;), (25, &#39;RACE&#39;), (26, &#39;EDU&#39;), (27, &#39;ETOH&#39;), (28, &#39;LIT&#39;), (29, &#39;OPI&#39;), (30, &#39;STAIR&#39;), (31, &#39;NRS&#39;), (32, &#39;SLEEP&#39;), (33, &#39;FUN&#39;), (34, &#39;CHOR&#39;), (35, &#39;W15&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting DEPRES using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting DEPRES using top 10 features: 0.54 (+/- 0.12)
 
 ****************************
 Feature: HOPEL
@@ -24187,7 +24187,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;DEP&#39;), (1, &#39;DEPRES&#39;), (1, &#39;DIS&#39;), (1, &#39;DUR&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PIWORK&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (2, &#39;STAIR&#39;), (3, &#39;RAD&#39;), (4, &#39;LBS&#39;), (5, &#39;AS&#39;), (6, &#39;WORTHL&#39;), (7, &#39;EMP&#39;), (8, &#39;EXE&#39;), (9, &#39;HEA&#39;), (10, &#39;JOI&#39;), (11, &#39;FREQ&#39;), (12, &#39;SEX&#39;), (13, &#39;PPISOC&#39;), (14, &#39;CAT.SAFE&#39;), (15, &#39;HELPL&#39;), (16, &#39;ABD&#39;), (17, &#39;PSY&#39;), (18, &#39;ERANDS&#39;), (19, &#39;LIT&#39;), (20, &#39;ETOH&#39;), (21, &#39;CHOR&#39;), (22, &#39;FIB&#39;), (23, &#39;SONSET&#39;), (24, &#39;OPI&#39;), (25, &#39;W15&#39;), (26, &#39;SLEEPQ&#39;), (27, &#39;SPROB&#39;), (28, &#39;EDU&#39;), (29, &#39;INJ&#39;), (30, &#39;SREFR&#39;), (31, &#39;NRS&#39;), (32, &#39;SLEEP&#39;), (33, &#39;FUN&#39;), (34, &#39;PI&#39;), (35, &#39;RACE&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting HOPEL using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting HOPEL using top 10 features: 0.62 (+/- 0.17)
 
 ****************************
 Feature: SLEEPQ
@@ -24201,7 +24201,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;EXE&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (1, &#39;SLEEP&#39;), (1, &#39;SONSET&#39;), (1, &#39;SREFR&#39;), (1, &#39;STAIR&#39;), (1, &#39;WORTHL&#39;), (2, &#39;EDU&#39;), (3, &#39;INJ&#39;), (4, &#39;HELPL&#39;), (5, &#39;SPROB&#39;), (6, &#39;ETOH&#39;), (7, &#39;PIDAY&#39;), (8, &#39;ERANDS&#39;), (9, &#39;FREQ&#39;), (10, &#39;JOI&#39;), (11, &#39;LBS&#39;), (12, &#39;PIWORK&#39;), (13, &#39;RAD&#39;), (14, &#39;LIT&#39;), (15, &#39;HOPEL&#39;), (16, &#39;DIS&#39;), (17, &#39;AS&#39;), (18, &#39;RACE&#39;), (19, &#39;UNEMP&#39;), (20, &#39;PICHOR&#39;), (21, &#39;PSY&#39;), (22, &#39;FIB&#39;), (23, &#39;HEA&#39;), (24, &#39;PPISOC&#39;), (25, &#39;EMP&#39;), (26, &#39;DEPRES&#39;), (27, &#39;OPI&#39;), (28, &#39;NRS&#39;), (29, &#39;ABD&#39;), (30, &#39;PI&#39;), (31, &#39;W15&#39;), (32, &#39;CHOR&#39;), (33, &#39;FUN&#39;), (34, &#39;DEP&#39;), (35, &#39;AGE&#39;), (36, &#39;CAT.NEVER&#39;), (37, &#39;WT&#39;), (38, &#39;HT&#39;)]
 
-Mean cross-validated accuracy for predicting SLEEPQ using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting SLEEPQ using top 10 features: 0.66 (+/- 0.12)
 
 ****************************
 Feature: SREFR
@@ -24214,7 +24214,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;DUR&#39;), (1, &#39;EXE&#39;), (1, &#39;JOI&#39;), (1, &#39;LBS&#39;), (1, &#39;OPI&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SLEEP&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;SONSET&#39;), (1, &#39;SPROB&#39;), (2, &#39;NRS&#39;), (3, &#39;PSY&#39;), (4, &#39;DIS&#39;), (5, &#39;PIDAY&#39;), (6, &#39;ABD&#39;), (7, &#39;HEA&#39;), (8, &#39;PPISOC&#39;), (9, &#39;CHOR&#39;), (10, &#39;AS&#39;), (11, &#39;DEPRES&#39;), (12, &#39;CAT.SAFE&#39;), (13, &#39;INJ&#39;), (14, &#39;STAIR&#39;), (15, &#39;LIT&#39;), (16, &#39;RACE&#39;), (17, &#39;HELPL&#39;), (18, &#39;PICHOR&#39;), (19, &#39;WORTHL&#39;), (20, &#39;FREQ&#39;), (21, &#39;ETOH&#39;), (22, &#39;EDU&#39;), (23, &#39;RAD&#39;), (24, &#39;CAT.NEVER&#39;), (25, &#39;W15&#39;), (26, &#39;FIB&#39;), (27, &#39;ERANDS&#39;), (28, &#39;EMP&#39;), (29, &#39;UNEMP&#39;), (30, &#39;FUN&#39;), (31, &#39;HOPEL&#39;), (32, &#39;PIWORK&#39;), (33, &#39;DEP&#39;), (34, &#39;SEX&#39;), (35, &#39;AGE&#39;), (36, &#39;PI&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting SREFR using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting SREFR using top 10 features: 0.60 (+/- 0.22)
 
 ****************************
 Feature: SPROB
@@ -24227,7 +24227,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;DUR&#39;), (1, &#39;FREQ&#39;), (1, &#39;OPI&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (1, &#39;SLEEP&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;SONSET&#39;), (1, &#39;SREFR&#39;), (2, &#39;CAT.SAFE&#39;), (3, &#39;LBS&#39;), (4, &#39;JOI&#39;), (5, &#39;EDU&#39;), (6, &#39;W15&#39;), (7, &#39;PIWORK&#39;), (8, &#39;HELPL&#39;), (9, &#39;STAIR&#39;), (10, &#39;DIS&#39;), (11, &#39;EXE&#39;), (12, &#39;PPISOC&#39;), (13, &#39;ETOH&#39;), (14, &#39;UNEMP&#39;), (15, &#39;ERANDS&#39;), (16, &#39;PICHOR&#39;), (17, &#39;INJ&#39;), (18, &#39;HEA&#39;), (19, &#39;PIDAY&#39;), (20, &#39;RAD&#39;), (21, &#39;WORTHL&#39;), (22, &#39;ABD&#39;), (23, &#39;CHOR&#39;), (24, &#39;FUN&#39;), (25, &#39;CAT.NEVER&#39;), (26, &#39;LIT&#39;), (27, &#39;HOPEL&#39;), (28, &#39;AS&#39;), (29, &#39;DEPRES&#39;), (30, &#39;PI&#39;), (31, &#39;FIB&#39;), (32, &#39;NRS&#39;), (33, &#39;RACE&#39;), (34, &#39;EMP&#39;), (35, &#39;DEP&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting SPROB using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting SPROB using top 10 features: 0.62 (+/- 0.20)
 
 ****************************
 Feature: SONSET
@@ -24241,7 +24241,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;ABD&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DIS&#39;), (1, &#39;FREQ&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SLEEP&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;SPROB&#39;), (1, &#39;SREFR&#39;), (2, &#39;ERANDS&#39;), (3, &#39;FIB&#39;), (4, &#39;AS&#39;), (5, &#39;ETOH&#39;), (6, &#39;CAT.NEVER&#39;), (7, &#39;DUR&#39;), (8, &#39;OPI&#39;), (9, &#39;EXE&#39;), (10, &#39;LIT&#39;), (11, &#39;SEX&#39;), (12, &#39;CHOR&#39;), (13, &#39;PSY&#39;), (14, &#39;PIDAY&#39;), (15, &#39;JOI&#39;), (16, &#39;FUN&#39;), (17, &#39;W15&#39;), (18, &#39;UNEMP&#39;), (19, &#39;LBS&#39;), (20, &#39;PIWORK&#39;), (21, &#39;NRS&#39;), (22, &#39;EDU&#39;), (23, &#39;WORTHL&#39;), (24, &#39;HEA&#39;), (25, &#39;HELPL&#39;), (26, &#39;DEPRES&#39;), (27, &#39;PPISOC&#39;), (28, &#39;PI&#39;), (29, &#39;PICHOR&#39;), (30, &#39;RACE&#39;), (31, &#39;EMP&#39;), (32, &#39;DEP&#39;), (33, &#39;INJ&#39;), (34, &#39;STAIR&#39;), (35, &#39;HOPEL&#39;), (36, &#39;HT&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting SONSET using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting SONSET using top 10 features: 0.59 (+/- 0.19)
 
 ****************************
 Feature: CAT.SAFE
@@ -24254,7 +24254,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;DUR&#39;), (1, &#39;HEA&#39;), (1, &#39;HELPL&#39;), (1, &#39;LBS&#39;), (1, &#39;RAD&#39;), (1, &#39;SEX&#39;), (1, &#39;UNEMP&#39;), (1, &#39;W15&#39;), (1, &#39;WORTHL&#39;), (2, &#39;ABD&#39;), (3, &#39;OPI&#39;), (4, &#39;ERANDS&#39;), (5, &#39;FUN&#39;), (6, &#39;CHOR&#39;), (7, &#39;SONSET&#39;), (8, &#39;PPISOC&#39;), (9, &#39;PIDAY&#39;), (10, &#39;PI&#39;), (11, &#39;PICHOR&#39;), (12, &#39;RACE&#39;), (13, &#39;LIT&#39;), (14, &#39;PSY&#39;), (15, &#39;SLEEPQ&#39;), (16, &#39;SAHELP&#39;), (17, &#39;EDU&#39;), (18, &#39;STAIR&#39;), (19, &#39;DEP&#39;), (20, &#39;PIWORK&#39;), (21, &#39;JOI&#39;), (22, &#39;AS&#39;), (23, &#39;DEPRES&#39;), (24, &#39;EMP&#39;), (25, &#39;EXE&#39;), (26, &#39;NRS&#39;), (27, &#39;INJ&#39;), (28, &#39;FREQ&#39;), (29, &#39;DIS&#39;), (30, &#39;SPROB&#39;), (31, &#39;SLEEP&#39;), (32, &#39;FIB&#39;), (33, &#39;ETOH&#39;), (34, &#39;HOPEL&#39;), (35, &#39;SREFR&#39;), (36, &#39;HT&#39;), (37, &#39;WT&#39;), (38, &#39;AGE&#39;)]
 
-Mean cross-validated accuracy for predicting CAT.SAFE using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting CAT.SAFE using top 10 features: 0.80 (+/- 0.13)
 
 ****************************
 Feature: CAT.NEVER
@@ -24267,7 +24267,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;AS&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;FREQ&#39;), (1, &#39;LIT&#39;), (1, &#39;PICHOR&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SPROB&#39;), (1, &#39;UNEMP&#39;), (2, &#39;LBS&#39;), (3, &#39;ABD&#39;), (4, &#39;DEPRES&#39;), (5, &#39;EDU&#39;), (6, &#39;DIS&#39;), (7, &#39;CHOR&#39;), (8, &#39;STAIR&#39;), (9, &#39;FUN&#39;), (10, &#39;PPISOC&#39;), (11, &#39;PIDAY&#39;), (12, &#39;ERANDS&#39;), (13, &#39;JOI&#39;), (14, &#39;W15&#39;), (15, &#39;SLEEPQ&#39;), (16, &#39;SLEEP&#39;), (17, &#39;SONSET&#39;), (18, &#39;HEA&#39;), (19, &#39;ETOH&#39;), (20, &#39;PSY&#39;), (21, &#39;EMP&#39;), (22, &#39;FIB&#39;), (23, &#39;SEX&#39;), (24, &#39;RACE&#39;), (25, &#39;HOPEL&#39;), (26, &#39;INJ&#39;), (27, &#39;OPI&#39;), (28, &#39;PI&#39;), (29, &#39;HELPL&#39;), (30, &#39;DEP&#39;), (31, &#39;NRS&#39;), (32, &#39;EXE&#39;), (33, &#39;SREFR&#39;), (34, &#39;PIWORK&#39;), (35, &#39;AGE&#39;), (36, &#39;HT&#39;), (37, &#39;WORTHL&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting CAT.NEVER using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting CAT.NEVER using top 10 features: 0.69 (+/- 0.16)
 
 ****************************
 Feature: LIT
@@ -24280,7 +24280,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;DUR&#39;), (1, &#39;FIB&#39;), (1, &#39;FUN&#39;), (1, &#39;JOI&#39;), (1, &#39;OPI&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PIWORK&#39;), (1, &#39;PSY&#39;), (1, &#39;SLEEPQ&#39;), (2, &#39;HOPEL&#39;), (3, &#39;WORTHL&#39;), (4, &#39;INJ&#39;), (5, &#39;SONSET&#39;), (6, &#39;AS&#39;), (7, &#39;UNEMP&#39;), (8, &#39;NRS&#39;), (9, &#39;CHOR&#39;), (10, &#39;SPROB&#39;), (11, &#39;ABD&#39;), (12, &#39;SREFR&#39;), (13, &#39;FREQ&#39;), (14, &#39;STAIR&#39;), (15, &#39;ERANDS&#39;), (16, &#39;RACE&#39;), (17, &#39;PI&#39;), (18, &#39;SLEEP&#39;), (19, &#39;HEA&#39;), (20, &#39;RAD&#39;), (21, &#39;EDU&#39;), (22, &#39;HELPL&#39;), (23, &#39;CAT.SAFE&#39;), (24, &#39;ETOH&#39;), (25, &#39;PPISOC&#39;), (26, &#39;HT&#39;), (27, &#39;DEPRES&#39;), (28, &#39;WT&#39;), (29, &#39;W15&#39;), (30, &#39;DEP&#39;), (31, &#39;SEX&#39;), (32, &#39;SAHELP&#39;), (33, &#39;LBS&#39;), (34, &#39;EMP&#39;), (35, &#39;DIS&#39;), (36, &#39;PIDAY&#39;), (37, &#39;EXE&#39;), (38, &#39;AGE&#39;)]
 
-Mean cross-validated accuracy for predicting LIT using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting LIT using top 10 features: 0.99 (+/- 0.04)
 
 ****************************
 Feature: AS
@@ -24293,7 +24293,7 @@ Top ten features:
 Features sorted by their rank:
 [(1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DIS&#39;), (1, &#39;ETOH&#39;), (1, &#39;FREQ&#39;), (1, &#39;LIT&#39;), (1, &#39;OPI&#39;), (1, &#39;PSY&#39;), (1, &#39;RAD&#39;), (1, &#39;UNEMP&#39;), (2, &#39;PIWORK&#39;), (3, &#39;EXE&#39;), (4, &#39;FIB&#39;), (5, &#39;HEA&#39;), (6, &#39;SREFR&#39;), (7, &#39;ABD&#39;), (8, &#39;DEPRES&#39;), (9, &#39;HOPEL&#39;), (10, &#39;EDU&#39;), (11, &#39;SONSET&#39;), (12, &#39;STAIR&#39;), (13, &#39;ERANDS&#39;), (14, &#39;DUR&#39;), (15, &#39;RACE&#39;), (16, &#39;INJ&#39;), (17, &#39;W15&#39;), (18, &#39;SLEEPQ&#39;), (19, &#39;CHOR&#39;), (20, &#39;HELPL&#39;), (21, &#39;WORTHL&#39;), (22, &#39;SEX&#39;), (23, &#39;LBS&#39;), (24, &#39;SAHELP&#39;), (25, &#39;JOI&#39;), (26, &#39;EMP&#39;), (27, &#39;SLEEP&#39;), (28, &#39;PPISOC&#39;), (29, &#39;NRS&#39;), (30, &#39;SPROB&#39;), (31, &#39;PICHOR&#39;), (32, &#39;FUN&#39;), (33, &#39;PI&#39;), (34, &#39;PIDAY&#39;), (35, &#39;DEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
 
-Mean cross-validated accuracy for predicting AS using top 10 features: 0.77 (+/- 0.11)
+Mean cross-validated accuracy for predicting AS using top 10 features: 0.75 (+/- 0.15)
 
 ****************************
 Feature: ETOH
@@ -24318,185 +24318,100 @@ Top ten features:
 
 Features sorted by their rank:
 [(1, &#39;AGE&#39;), (1, &#39;DEP&#39;), (1, &#39;DUR&#39;), (1, &#39;EDU&#39;), (1, &#39;FREQ&#39;), (1, &#39;FUN&#39;), (1, &#39;NRS&#39;), (1, &#39;SLEEP&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;SREFR&#39;), (2, &#39;SPROB&#39;), (3, &#39;ERANDS&#39;), (4, &#39;PI&#39;), (5, &#39;CHOR&#39;), (6, &#39;SONSET&#39;), (7, &#39;STAIR&#39;), (8, &#39;WT&#39;), (9, &#39;W15&#39;), (10, &#39;DEPRES&#39;), (11, &#39;PIDAY&#39;), (12, &#39;WORTHL&#39;), (13, &#39;EMP&#39;), (14, &#39;HT&#39;), (15, &#39;HELPL&#39;), (16, &#39;HOPEL&#39;), (17, &#39;PICHOR&#39;), (18, &#39;ABD&#39;), (19, &#39;PPISOC&#39;), (20, &#39;LBS&#39;), (21, &#39;PIWORK&#39;), (22, &#39;EXE&#39;), (23, &#39;SEX&#39;), (24, &#39;HEA&#39;), (25, &#39;CAT.SAFE&#39;), (26, &#39;FIB&#39;), (27, &#39;OPI&#39;), (28, &#39;INJ&#39;), (29, &#39;CAT.NEVER&#39;), (30, &#39;RACE&#39;), (31, &#39;JOI&#39;), (32, &#39;UNEMP&#39;), (33, &#39;PSY&#39;), (34, &#39;DIS&#39;), (35, &#39;ETOH&#39;), (36, &#39;RAD&#39;), (37, &#39;AS&#39;), (38, &#39;LIT&#39;)]
-
-Mean cross-validated accuracy for predicting SAHELP using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: AGE
-     51  60  65  52  40  45  64  36  35  31 ...  20  76  22  79  24  66  26  \
-AGE  14  10   8   8   7   6   6   6   6   6 ...   1   1   1   1   1   1   1   
-
-     62  38  81  
-AGE   1   1   1  
-
-[1 rows x 53 columns]
-
-Top ten features:
-[&#39;DUR&#39; &#39;PIDAY&#39; &#39;INJ&#39; &#39;JOI&#39; &#39;HEA&#39; &#39;FIB&#39; &#39;WORTHL&#39; &#39;AS&#39; &#39;ETOH&#39; &#39;SEX&#39;]
-
-Features sorted by their rank:
-[(1, &#39;AS&#39;), (1, &#39;DUR&#39;), (1, &#39;ETOH&#39;), (1, &#39;FIB&#39;), (1, &#39;HEA&#39;), (1, &#39;INJ&#39;), (1, &#39;JOI&#39;), (1, &#39;PIDAY&#39;), (1, &#39;SEX&#39;), (1, &#39;WORTHL&#39;), (2, &#39;CAT.SAFE&#39;), (3, &#39;SREFR&#39;), (4, &#39;W15&#39;), (5, &#39;ABD&#39;), (6, &#39;RAD&#39;), (7, &#39;ERANDS&#39;), (8, &#39;HOPEL&#39;), (9, &#39;DEPRES&#39;), (10, &#39;CHOR&#39;), (11, &#39;PPISOC&#39;), (12, &#39;PICHOR&#39;), (13, &#39;FREQ&#39;), (14, &#39;EMP&#39;), (15, &#39;CAT.NEVER&#39;), (16, &#39;LBS&#39;), (17, &#39;HELPL&#39;), (18, &#39;SPROB&#39;), (19, &#39;PIWORK&#39;), (20, &#39;NRS&#39;), (21, &#39;SONSET&#39;), (22, &#39;OPI&#39;), (23, &#39;SLEEPQ&#39;), (24, &#39;STAIR&#39;), (25, &#39;UNEMP&#39;), (26, &#39;PSY&#39;), (27, &#39;RACE&#39;), (28, &#39;EDU&#39;), (29, &#39;DIS&#39;), (30, &#39;EXE&#39;), (31, &#39;DEP&#39;), (32, &#39;FUN&#39;), (33, &#39;SAHELP&#39;), (34, &#39;PI&#39;), (35, &#39;SLEEP&#39;), (36, &#39;LIT&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting AGE using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: SEX
-       1   0
-SEX  102  98
-
-Top ten features:
-[&#39;RAD&#39; &#39;EXE&#39; &#39;OPI&#39; &#39;ABD&#39; &#39;JOI&#39; &#39;HEA&#39; &#39;CAT.SAFE&#39; &#39;LIT&#39; &#39;AS&#39; &#39;ETOH&#39;]
-
-Features sorted by their rank:
-[(1, &#39;ABD&#39;), (1, &#39;AS&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;ETOH&#39;), (1, &#39;EXE&#39;), (1, &#39;HEA&#39;), (1, &#39;JOI&#39;), (1, &#39;LIT&#39;), (1, &#39;OPI&#39;), (1, &#39;RAD&#39;), (2, &#39;STAIR&#39;), (3, &#39;PPISOC&#39;), (4, &#39;INJ&#39;), (5, &#39;SPROB&#39;), (6, &#39;SONSET&#39;), (7, &#39;PIDAY&#39;), (8, &#39;PI&#39;), (9, &#39;PICHOR&#39;), (10, &#39;DIS&#39;), (11, &#39;W15&#39;), (12, &#39;ERANDS&#39;), (13, &#39;CHOR&#39;), (14, &#39;FUN&#39;), (15, &#39;HOPEL&#39;), (16, &#39;PIWORK&#39;), (17, &#39;SREFR&#39;), (18, &#39;SLEEPQ&#39;), (19, &#39;RACE&#39;), (20, &#39;LBS&#39;), (21, &#39;FIB&#39;), (22, &#39;SAHELP&#39;), (23, &#39;EDU&#39;), (24, &#39;DUR&#39;), (25, &#39;NRS&#39;), (26, &#39;WORTHL&#39;), (27, &#39;DEP&#39;), (28, &#39;HELPL&#39;), (29, &#39;CAT.NEVER&#39;), (30, &#39;EMP&#39;), (31, &#39;HT&#39;), (32, &#39;DEPRES&#39;), (33, &#39;SLEEP&#39;), (34, &#39;FREQ&#39;), (35, &#39;UNEMP&#39;), (36, &#39;AGE&#39;), (37, &#39;WT&#39;), (38, &#39;PSY&#39;)]
-
-Mean cross-validated accuracy for predicting SEX using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: EMP
-      1   2   5   4   6   7  3  9  0  8
-EMP  89  37  27  13  11  10  8  2  2  1
-
-Top ten features:
-[&#39;FREQ&#39; &#39;LBS&#39; &#39;INJ&#39; &#39;UNEMP&#39; &#39;W15&#39; &#39;ERANDS&#39; &#39;SREFR&#39; &#39;CAT.SAFE&#39; &#39;SAHELP&#39;
- &#39;DIS&#39;]
-
-Features sorted by their rank:
-[(1, &#39;CAT.SAFE&#39;), (1, &#39;DIS&#39;), (1, &#39;ERANDS&#39;), (1, &#39;FREQ&#39;), (1, &#39;INJ&#39;), (1, &#39;LBS&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SREFR&#39;), (1, &#39;UNEMP&#39;), (1, &#39;W15&#39;), (2, &#39;HEA&#39;), (3, &#39;HOPEL&#39;), (4, &#39;PIWORK&#39;), (5, &#39;FIB&#39;), (6, &#39;CAT.NEVER&#39;), (7, &#39;WORTHL&#39;), (8, &#39;STAIR&#39;), (9, &#39;DUR&#39;), (10, &#39;SEX&#39;), (11, &#39;RACE&#39;), (12, &#39;RAD&#39;), (13, &#39;SLEEPQ&#39;), (14, &#39;PPISOC&#39;), (15, &#39;PSY&#39;), (16, &#39;OPI&#39;), (17, &#39;CHOR&#39;), (18, &#39;PIDAY&#39;), (19, &#39;PICHOR&#39;), (20, &#39;ABD&#39;), (21, &#39;AS&#39;), (22, &#39;EXE&#39;), (23, &#39;ETOH&#39;), (24, &#39;HELPL&#39;), (25, &#39;NRS&#39;), (26, &#39;JOI&#39;), (27, &#39;EDU&#39;), (28, &#39;SPROB&#39;), (29, &#39;DEPRES&#39;), (30, &#39;SONSET&#39;), (31, &#39;FUN&#39;), (32, &#39;PI&#39;), (33, &#39;DEP&#39;), (34, &#39;LIT&#39;), (35, &#39;SLEEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting EMP using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: EDU
-      6   3   7   4   2   0  8  9  5  1
-EDU  68  43  38  17  12  10  6  3  2  1
-
-Top ten features:
-[&#39;DUR&#39; &#39;FREQ&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;FIB&#39; &#39;CAT.NEVER&#39; &#39;LIT&#39; &#39;SAHELP&#39; &#39;SEX&#39; &#39;DIS&#39;]
-
-Features sorted by their rank:
-[(1, &#39;CAT.NEVER&#39;), (1, &#39;DIS&#39;), (1, &#39;DUR&#39;), (1, &#39;EXE&#39;), (1, &#39;FIB&#39;), (1, &#39;FREQ&#39;), (1, &#39;INJ&#39;), (1, &#39;LIT&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (2, &#39;UNEMP&#39;), (3, &#39;W15&#39;), (4, &#39;HOPEL&#39;), (5, &#39;AS&#39;), (6, &#39;ABD&#39;), (7, &#39;SREFR&#39;), (8, &#39;PIDAY&#39;), (9, &#39;ETOH&#39;), (10, &#39;RACE&#39;), (11, &#39;WORTHL&#39;), (12, &#39;CAT.SAFE&#39;), (13, &#39;HEA&#39;), (14, &#39;ERANDS&#39;), (15, &#39;STAIR&#39;), (16, &#39;LBS&#39;), (17, &#39;JOI&#39;), (18, &#39;SPROB&#39;), (19, &#39;SLEEPQ&#39;), (20, &#39;RAD&#39;), (21, &#39;PSY&#39;), (22, &#39;OPI&#39;), (23, &#39;HELPL&#39;), (24, &#39;PPISOC&#39;), (25, &#39;DEPRES&#39;), (26, &#39;PIWORK&#39;), (27, &#39;NRS&#39;), (28, &#39;PICHOR&#39;), (29, &#39;CHOR&#39;), (30, &#39;EMP&#39;), (31, &#39;FUN&#39;), (32, &#39;SONSET&#39;), (33, &#39;PI&#39;), (34, &#39;DEP&#39;), (35, &#39;SLEEP&#39;), (36, &#39;HT&#39;), (37, &#39;WT&#39;), (38, &#39;AGE&#39;)]
-
-Mean cross-validated accuracy for predicting EDU using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: HT
-    66  68  65  71  69  64  67  0   70  72 ...  74  61  75  59  76  56  55  \
-HT  26  19  14  14  13  13  13  13  11   9 ...   5   5   4   3   1   1   1   
-
-    54  50  77  
-HT   1   1   1  
-
-[1 rows x 24 columns]
-
-Top ten features:
-[&#39;DUR&#39; &#39;FREQ&#39; &#39;EXE&#39; &#39;UNEMP&#39; &#39;OPI&#39; &#39;FIB&#39; &#39;CAT.SAFE&#39; &#39;CAT.NEVER&#39; &#39;SAHELP&#39;
- &#39;SEX&#39;]
-
-Features sorted by their rank:
-[(1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;EXE&#39;), (1, &#39;FIB&#39;), (1, &#39;FREQ&#39;), (1, &#39;OPI&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (1, &#39;UNEMP&#39;), (2, &#39;PSY&#39;), (3, &#39;RAD&#39;), (4, &#39;SPROB&#39;), (5, &#39;ETOH&#39;), (6, &#39;ABD&#39;), (7, &#39;STAIR&#39;), (8, &#39;PICHOR&#39;), (9, &#39;PIWORK&#39;), (10, &#39;SONSET&#39;), (11, &#39;HELPL&#39;), (12, &#39;JOI&#39;), (13, &#39;DIS&#39;), (14, &#39;HOPEL&#39;), (15, &#39;INJ&#39;), (16, &#39;SREFR&#39;), (17, &#39;EMP&#39;), (18, &#39;WORTHL&#39;), (19, &#39;ERANDS&#39;), (20, &#39;SLEEPQ&#39;), (21, &#39;DEPRES&#39;), (22, &#39;LBS&#39;), (23, &#39;W15&#39;), (24, &#39;HEA&#39;), (25, &#39;AS&#39;), (26, &#39;PPISOC&#39;), (27, &#39;EDU&#39;), (28, &#39;RACE&#39;), (29, &#39;PIDAY&#39;), (30, &#39;CHOR&#39;), (31, &#39;NRS&#39;), (32, &#39;FUN&#39;), (33, &#39;DEP&#39;), (34, &#39;LIT&#39;), (35, &#39;SLEEP&#39;), (36, &#39;PI&#39;), (37, &#39;AGE&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting HT using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: WT
-    0    190  155  160  165  185  135  145  210  200 ...   163  162  252  147  \
-WT   12    8    8    8    8    7    6    6    6    6 ...     1    1    1    1   
-
-    144  137  133  129  128  151  
-WT    1    1    1    1    1    1  
-
-[1 rows x 80 columns]
-
-Top ten features:
-[&#39;DUR&#39; &#39;FREQ&#39; &#39;PIDAY&#39; &#39;INJ&#39; &#39;ABD&#39; &#39;ERANDS&#39; &#39;WORTHL&#39; &#39;DEPRES&#39; &#39;SONSET&#39; &#39;SEX&#39;]
-
-Features sorted by their rank:
-[(1, &#39;ABD&#39;), (1, &#39;DEPRES&#39;), (1, &#39;DUR&#39;), (1, &#39;ERANDS&#39;), (1, &#39;FREQ&#39;), (1, &#39;INJ&#39;), (1, &#39;PIDAY&#39;), (1, &#39;SEX&#39;), (1, &#39;SONSET&#39;), (1, &#39;WORTHL&#39;), (2, &#39;HEA&#39;), (3, &#39;W15&#39;), (4, &#39;SREFR&#39;), (5, &#39;FIB&#39;), (6, &#39;HOPEL&#39;), (7, &#39;AS&#39;), (8, &#39;RAD&#39;), (9, &#39;STAIR&#39;), (10, &#39;PIWORK&#39;), (11, &#39;SLEEPQ&#39;), (12, &#39;CAT.SAFE&#39;), (13, &#39;HELPL&#39;), (14, &#39;CHOR&#39;), (15, &#39;EMP&#39;), (16, &#39;UNEMP&#39;), (17, &#39;LBS&#39;), (18, &#39;PPISOC&#39;), (19, &#39;OPI&#39;), (20, &#39;EDU&#39;), (21, &#39;NRS&#39;), (22, &#39;JOI&#39;), (23, &#39;PICHOR&#39;), (24, &#39;RACE&#39;), (25, &#39;ETOH&#39;), (26, &#39;CAT.NEVER&#39;), (27, &#39;SPROB&#39;), (28, &#39;DEP&#39;), (29, &#39;PSY&#39;), (30, &#39;DIS&#39;), (31, &#39;FUN&#39;), (32, &#39;EXE&#39;), (33, &#39;PI&#39;), (34, &#39;SAHELP&#39;), (35, &#39;SLEEP&#39;), (36, &#39;LIT&#39;), (37, &#39;AGE&#39;), (38, &#39;HT&#39;)]
-
-Mean cross-validated accuracy for predicting WT using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: RACE
-        5   2   0   3  4  1
-RACE  134  26  22  11  4  3
-
-Top ten features:
-[&#39;DUR&#39; &#39;FREQ&#39; &#39;RAD&#39; &#39;PSY&#39; &#39;UNEMP&#39; &#39;OPI&#39; &#39;W15&#39; &#39;SLEEPQ&#39; &#39;SAHELP&#39; &#39;SEX&#39;]
-
-Features sorted by their rank:
-[(1, &#39;DUR&#39;), (1, &#39;FREQ&#39;), (1, &#39;OPI&#39;), (1, &#39;PSY&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SEX&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;UNEMP&#39;), (1, &#39;W15&#39;), (2, &#39;AS&#39;), (3, &#39;EMP&#39;), (4, &#39;FIB&#39;), (5, &#39;ABD&#39;), (6, &#39;ETOH&#39;), (7, &#39;WORTHL&#39;), (8, &#39;ERANDS&#39;), (9, &#39;LIT&#39;), (10, &#39;SPROB&#39;), (11, &#39;SREFR&#39;), (12, &#39;DIS&#39;), (13, &#39;LBS&#39;), (14, &#39;CAT.SAFE&#39;), (15, &#39;PIDAY&#39;), (16, &#39;PPISOC&#39;), (17, &#39;CAT.NEVER&#39;), (18, &#39;HELPL&#39;), (19, &#39;EDU&#39;), (20, &#39;EXE&#39;), (21, &#39;HOPEL&#39;), (22, &#39;SLEEP&#39;), (23, &#39;PICHOR&#39;), (24, &#39;HEA&#39;), (25, &#39;PIWORK&#39;), (26, &#39;DEPRES&#39;), (27, &#39;SONSET&#39;), (28, &#39;INJ&#39;), (29, &#39;NRS&#39;), (30, &#39;STAIR&#39;), (31, &#39;JOI&#39;), (32, &#39;PI&#39;), (33, &#39;CHOR&#39;), (34, &#39;FUN&#39;), (35, &#39;DEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting RACE using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: PI
-    12  20  13  16  15  14  7   11  8   17  18  10  19  9   6   4   5   0 
-PI  21  20  19  18  16  16  14  14  11  10  10   8   6   6   4   3   2   2
-
-Top ten features:
-[&#39;DUR&#39; &#39;PIDAY&#39; &#39;PIWORK&#39; &#39;PPISOC&#39; &#39;PICHOR&#39; &#39;LBS&#39; &#39;EXE&#39; &#39;OPI&#39; &#39;CAT.SAFE&#39;
- &#39;SAHELP&#39;]
-
-Features sorted by their rank:
-[(1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;EXE&#39;), (1, &#39;LBS&#39;), (1, &#39;OPI&#39;), (1, &#39;PICHOR&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PIWORK&#39;), (1, &#39;PPISOC&#39;), (1, &#39;SAHELP&#39;), (2, &#39;UNEMP&#39;), (3, &#39;FREQ&#39;), (4, &#39;INJ&#39;), (5, &#39;PSY&#39;), (6, &#39;ABD&#39;), (7, &#39;SEX&#39;), (8, &#39;ERANDS&#39;), (9, &#39;AS&#39;), (10, &#39;ETOH&#39;), (11, &#39;HEA&#39;), (12, &#39;FIB&#39;), (13, &#39;W15&#39;), (14, &#39;WORTHL&#39;), (15, &#39;SLEEPQ&#39;), (16, &#39;SREFR&#39;), (17, &#39;SONSET&#39;), (18, &#39;STAIR&#39;), (19, &#39;NRS&#39;), (20, &#39;SPROB&#39;), (21, &#39;CHOR&#39;), (22, &#39;CAT.NEVER&#39;), (23, &#39;LIT&#39;), (24, &#39;RAD&#39;), (25, &#39;JOI&#39;), (26, &#39;EDU&#39;), (27, &#39;DEPRES&#39;), (28, &#39;DIS&#39;), (29, &#39;HOPEL&#39;), (30, &#39;HELPL&#39;), (31, &#39;RACE&#39;), (32, &#39;FUN&#39;), (33, &#39;EMP&#39;), (34, &#39;DEP&#39;), (35, &#39;SLEEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting PI using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: FUN
-     8   0   12  11  6   5   13  10  9   7   14  15  17  16
-FUN  26  26  22  18  18  16  15  12  12  11  10   6   4   4
-
-Top ten features:
-[&#39;DUR&#39; &#39;FREQ&#39; &#39;RAD&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;CHOR&#39; &#39;STAIR&#39; &#39;W15&#39; &#39;ERANDS&#39; &#39;SAHELP&#39;]
-
-Features sorted by their rank:
-[(1, &#39;CHOR&#39;), (1, &#39;DUR&#39;), (1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;FREQ&#39;), (1, &#39;INJ&#39;), (1, &#39;RAD&#39;), (1, &#39;SAHELP&#39;), (1, &#39;STAIR&#39;), (1, &#39;W15&#39;), (2, &#39;UNEMP&#39;), (3, &#39;AS&#39;), (4, &#39;PIWORK&#39;), (5, &#39;SREFR&#39;), (6, &#39;SLEEPQ&#39;), (7, &#39;FIB&#39;), (8, &#39;SEX&#39;), (9, &#39;PIDAY&#39;), (10, &#39;WORTHL&#39;), (11, &#39;HEA&#39;), (12, &#39;DIS&#39;), (13, &#39;CAT.SAFE&#39;), (14, &#39;OPI&#39;), (15, &#39;HOPEL&#39;), (16, &#39;PSY&#39;), (17, &#39;ABD&#39;), (18, &#39;CAT.NEVER&#39;), (19, &#39;LBS&#39;), (20, &#39;ETOH&#39;), (21, &#39;PPISOC&#39;), (22, &#39;HELPL&#39;), (23, &#39;SPROB&#39;), (24, &#39;SONSET&#39;), (25, &#39;EDU&#39;), (26, &#39;DEPRES&#39;), (27, &#39;PICHOR&#39;), (28, &#39;LIT&#39;), (29, &#39;JOI&#39;), (30, &#39;EMP&#39;), (31, &#39;RACE&#39;), (32, &#39;NRS&#39;), (33, &#39;PI&#39;), (34, &#39;DEP&#39;), (35, &#39;SLEEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting FUN using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: DEP
-      0   4   5   6   8   16  7   20  18  17  10  19  12  9 
-DEP  104  34  20  10   8   6   6   3   2   2   2   1   1   1
-
-Top ten features:
-[&#39;DUR&#39; &#39;PIDAY&#39; &#39;PSY&#39; &#39;ABD&#39; &#39;JOI&#39; &#39;HELPL&#39; &#39;CAT.SAFE&#39; &#39;CAT.NEVER&#39; &#39;ETOH&#39;
- &#39;SAHELP&#39;]
-
-Features sorted by their rank:
-[(1, &#39;ABD&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;CAT.SAFE&#39;), (1, &#39;DUR&#39;), (1, &#39;ETOH&#39;), (1, &#39;HELPL&#39;), (1, &#39;JOI&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (2, &#39;SREFR&#39;), (3, &#39;AS&#39;), (4, &#39;DEPRES&#39;), (5, &#39;ERANDS&#39;), (6, &#39;HEA&#39;), (7, &#39;RAD&#39;), (8, &#39;DIS&#39;), (9, &#39;FREQ&#39;), (10, &#39;HOPEL&#39;), (11, &#39;NRS&#39;), (12, &#39;LBS&#39;), (13, &#39;EMP&#39;), (14, &#39;OPI&#39;), (15, &#39;CHOR&#39;), (16, &#39;PIWORK&#39;), (17, &#39;RACE&#39;), (18, &#39;SPROB&#39;), (19, &#39;EXE&#39;), (20, &#39;WORTHL&#39;), (21, &#39;PPISOC&#39;), (22, &#39;SEX&#39;), (23, &#39;STAIR&#39;), (24, &#39;PICHOR&#39;), (25, &#39;INJ&#39;), (26, &#39;SONSET&#39;), (27, &#39;UNEMP&#39;), (28, &#39;W15&#39;), (29, &#39;FIB&#39;), (30, &#39;SLEEPQ&#39;), (31, &#39;EDU&#39;), (32, &#39;FUN&#39;), (33, &#39;PI&#39;), (34, &#39;LIT&#39;), (35, &#39;SLEEP&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting DEP using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: SLEEP
-       10  12  11  13  16  14  17  9   15  18  20  19  6   7   8   5   4   0 
-SLEEP  24  21  20  18  15  15  14  12  11  10   9   7   6   5   4   3   3   3
-
-Top ten features:
-[&#39;LBS&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;PSY&#39; &#39;ABD&#39; &#39;SLEEPQ&#39; &#39;SPROB&#39; &#39;SONSET&#39; &#39;CAT.NEVER&#39;
- &#39;SAHELP&#39;]
-
-Features sorted by their rank:
-[(1, &#39;ABD&#39;), (1, &#39;CAT.NEVER&#39;), (1, &#39;EXE&#39;), (1, &#39;INJ&#39;), (1, &#39;LBS&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;SLEEPQ&#39;), (1, &#39;SONSET&#39;), (1, &#39;SPROB&#39;), (2, &#39;FREQ&#39;), (3, &#39;DUR&#39;), (4, &#39;JOI&#39;), (5, &#39;SREFR&#39;), (6, &#39;ETOH&#39;), (7, &#39;ERANDS&#39;), (8, &#39;HELPL&#39;), (9, &#39;PIDAY&#39;), (10, &#39;W15&#39;), (11, &#39;PIWORK&#39;), (12, &#39;SEX&#39;), (13, &#39;AS&#39;), (14, &#39;DEPRES&#39;), (15, &#39;NRS&#39;), (16, &#39;UNEMP&#39;), (17, &#39;WORTHL&#39;), (18, &#39;HEA&#39;), (19, &#39;RAD&#39;), (20, &#39;PICHOR&#39;), (21, &#39;EMP&#39;), (22, &#39;CAT.SAFE&#39;), (23, &#39;RACE&#39;), (24, &#39;CHOR&#39;), (25, &#39;PPISOC&#39;), (26, &#39;STAIR&#39;), (27, &#39;OPI&#39;), (28, &#39;DIS&#39;), (29, &#39;EDU&#39;), (30, &#39;FIB&#39;), (31, &#39;LIT&#39;), (32, &#39;HOPEL&#39;), (33, &#39;FUN&#39;), (34, &#39;DEP&#39;), (35, &#39;PI&#39;), (36, &#39;AGE&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting SLEEP using top 10 features: 0.77 (+/- 0.11)
-
-****************************
-Feature: DIS
-       0   1
-DIS  170  30
-
-Top ten features:
-[&#39;PIDAY&#39; &#39;INJ&#39; &#39;EXE&#39; &#39;PSY&#39; &#39;UNEMP&#39; &#39;OPI&#39; &#39;HEA&#39; &#39;FIB&#39; &#39;ERANDS&#39; &#39;SAHELP&#39;]
-
-Features sorted by their rank:
-[(1, &#39;ERANDS&#39;), (1, &#39;EXE&#39;), (1, &#39;FIB&#39;), (1, &#39;HEA&#39;), (1, &#39;INJ&#39;), (1, &#39;OPI&#39;), (1, &#39;PIDAY&#39;), (1, &#39;PSY&#39;), (1, &#39;SAHELP&#39;), (1, &#39;UNEMP&#39;), (2, &#39;AS&#39;), (3, &#39;LBS&#39;), (4, &#39;DUR&#39;), (5, &#39;CAT.NEVER&#39;), (6, &#39;HOPEL&#39;), (7, &#39;SLEEPQ&#39;), (8, &#39;SPROB&#39;), (9, &#39;CAT.SAFE&#39;), (10, &#39;NRS&#39;), (11, &#39;ABD&#39;), (12, &#39;SEX&#39;), (13, &#39;EMP&#39;), (14, &#39;CHOR&#39;), (15, &#39;PPISOC&#39;), (16, &#39;FREQ&#39;), (17, &#39;ETOH&#39;), (18, &#39;RACE&#39;), (19, &#39;WORTHL&#39;), (20, &#39;HELPL&#39;), (21, &#39;EDU&#39;), (22, &#39;SREFR&#39;), (23, &#39;DEPRES&#39;), (24, &#39;STAIR&#39;), (25, &#39;FUN&#39;), (26, &#39;SLEEP&#39;), (27, &#39;RAD&#39;), (28, &#39;LIT&#39;), (29, &#39;DEP&#39;), (30, &#39;PICHOR&#39;), (31, &#39;PI&#39;), (32, &#39;PIWORK&#39;), (33, &#39;SONSET&#39;), (34, &#39;JOI&#39;), (35, &#39;AGE&#39;), (36, &#39;W15&#39;), (37, &#39;HT&#39;), (38, &#39;WT&#39;)]
-
-Mean cross-validated accuracy for predicting DIS using top 10 features: 0.77 (+/- 0.11)
 </pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-127-9847f3b2679d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     46</span>     <span class="ansi-red-fg">#print(model)</span>
+<span class="ansi-green-intense-fg ansi-bold">     47</span> 
+<span class="ansi-green-fg">---&gt; 48</span><span class="ansi-red-fg">     </span>scores <span class="ansi-blue-fg">=</span> cross_val_score<span class="ansi-blue-fg">(</span>model<span class="ansi-blue-fg">,</span> ff<span class="ansi-blue-fg">,</span> df<span class="ansi-blue-fg">[</span>target<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">[</span>f<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> cv<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     49</span> <span class="ansi-red-fg">#     print( &#34;Cross validation scores using top 10 features&#34;)</span>
+<span class="ansi-green-intense-fg ansi-bold">     50</span> <span class="ansi-red-fg">#     print(scores )</span>
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/model_selection/_validation.py</span> in <span class="ansi-cyan-fg">cross_val_score</span><span class="ansi-blue-fg">(estimator, X, y, groups, scoring, cv, n_jobs, verbose, fit_params, pre_dispatch)</span>
+<span class="ansi-green-intense-fg ansi-bold">    138</span>                                               train<span class="ansi-blue-fg">,</span> test<span class="ansi-blue-fg">,</span> verbose<span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    139</span>                                               fit_params)
+<span class="ansi-green-fg">--&gt; 140</span><span class="ansi-red-fg">                       for train, test in cv.split(X, y, groups))
+</span><span class="ansi-green-intense-fg ansi-bold">    141</span>     <span class="ansi-green-fg">return</span> np<span class="ansi-blue-fg">.</span>array<span class="ansi-blue-fg">(</span>scores<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    142</span> 
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/externals/joblib/parallel.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, iterable)</span>
+<span class="ansi-green-intense-fg ansi-bold">    756</span>             <span class="ansi-red-fg"># was dispatched. In particular this covers the edge</span>
+<span class="ansi-green-intense-fg ansi-bold">    757</span>             <span class="ansi-red-fg"># case of Parallel used with an exhausted iterator.</span>
+<span class="ansi-green-fg">--&gt; 758</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">while</span> self<span class="ansi-blue-fg">.</span>dispatch_one_batch<span class="ansi-blue-fg">(</span>iterator<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    759</span>                 self<span class="ansi-blue-fg">.</span>_iterating <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
+<span class="ansi-green-intense-fg ansi-bold">    760</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/externals/joblib/parallel.py</span> in <span class="ansi-cyan-fg">dispatch_one_batch</span><span class="ansi-blue-fg">(self, iterator)</span>
+<span class="ansi-green-intense-fg ansi-bold">    606</span>                 <span class="ansi-green-fg">return</span> <span class="ansi-green-fg">False</span>
+<span class="ansi-green-intense-fg ansi-bold">    607</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 608</span><span class="ansi-red-fg">                 </span>self<span class="ansi-blue-fg">.</span>_dispatch<span class="ansi-blue-fg">(</span>tasks<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    609</span>                 <span class="ansi-green-fg">return</span> <span class="ansi-green-fg">True</span>
+<span class="ansi-green-intense-fg ansi-bold">    610</span> 
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/externals/joblib/parallel.py</span> in <span class="ansi-cyan-fg">_dispatch</span><span class="ansi-blue-fg">(self, batch)</span>
+<span class="ansi-green-intense-fg ansi-bold">    569</span>         dispatch_timestamp <span class="ansi-blue-fg">=</span> time<span class="ansi-blue-fg">.</span>time<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    570</span>         cb <span class="ansi-blue-fg">=</span> BatchCompletionCallBack<span class="ansi-blue-fg">(</span>dispatch_timestamp<span class="ansi-blue-fg">,</span> len<span class="ansi-blue-fg">(</span>batch<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">--&gt; 571</span><span class="ansi-red-fg">         </span>job <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_backend<span class="ansi-blue-fg">.</span>apply_async<span class="ansi-blue-fg">(</span>batch<span class="ansi-blue-fg">,</span> callback<span class="ansi-blue-fg">=</span>cb<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    572</span>         self<span class="ansi-blue-fg">.</span>_jobs<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span>job<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    573</span> 
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/externals/joblib/_parallel_backends.py</span> in <span class="ansi-cyan-fg">apply_async</span><span class="ansi-blue-fg">(self, func, callback)</span>
+<span class="ansi-green-intense-fg ansi-bold">    107</span>     <span class="ansi-green-fg">def</span> apply_async<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> func<span class="ansi-blue-fg">,</span> callback<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    108</span>         <span class="ansi-blue-fg">&#34;&#34;&#34;Schedule a func to be run&#34;&#34;&#34;</span>
+<span class="ansi-green-fg">--&gt; 109</span><span class="ansi-red-fg">         </span>result <span class="ansi-blue-fg">=</span> ImmediateResult<span class="ansi-blue-fg">(</span>func<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    110</span>         <span class="ansi-green-fg">if</span> callback<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    111</span>             callback<span class="ansi-blue-fg">(</span>result<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/externals/joblib/_parallel_backends.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, batch)</span>
+<span class="ansi-green-intense-fg ansi-bold">    320</span>         <span class="ansi-red-fg"># Don&#39;t delay the application, to avoid keeping the input</span>
+<span class="ansi-green-intense-fg ansi-bold">    321</span>         <span class="ansi-red-fg"># arguments in memory</span>
+<span class="ansi-green-fg">--&gt; 322</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>results <span class="ansi-blue-fg">=</span> batch<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    323</span> 
+<span class="ansi-green-intense-fg ansi-bold">    324</span>     <span class="ansi-green-fg">def</span> get<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/externals/joblib/parallel.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    129</span> 
+<span class="ansi-green-intense-fg ansi-bold">    130</span>     <span class="ansi-green-fg">def</span> __call__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 131</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> <span class="ansi-blue-fg">[</span>func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> func<span class="ansi-blue-fg">,</span> args<span class="ansi-blue-fg">,</span> kwargs <span class="ansi-green-fg">in</span> self<span class="ansi-blue-fg">.</span>items<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    132</span> 
+<span class="ansi-green-intense-fg ansi-bold">    133</span>     <span class="ansi-green-fg">def</span> __len__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/externals/joblib/parallel.py</span> in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-fg">(.0)</span>
+<span class="ansi-green-intense-fg ansi-bold">    129</span> 
+<span class="ansi-green-intense-fg ansi-bold">    130</span>     <span class="ansi-green-fg">def</span> __call__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 131</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> <span class="ansi-blue-fg">[</span>func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> func<span class="ansi-blue-fg">,</span> args<span class="ansi-blue-fg">,</span> kwargs <span class="ansi-green-fg">in</span> self<span class="ansi-blue-fg">.</span>items<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    132</span> 
+<span class="ansi-green-intense-fg ansi-bold">    133</span>     <span class="ansi-green-fg">def</span> __len__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/model_selection/_validation.py</span> in <span class="ansi-cyan-fg">_fit_and_score</span><span class="ansi-blue-fg">(estimator, X, y, scorer, train, test, verbose, parameters, fit_params, return_train_score, return_parameters, return_n_test_samples, return_times, error_score)</span>
+<span class="ansi-green-intense-fg ansi-bold">    236</span>             estimator<span class="ansi-blue-fg">.</span>fit<span class="ansi-blue-fg">(</span>X_train<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>fit_params<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    237</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 238</span><span class="ansi-red-fg">             </span>estimator<span class="ansi-blue-fg">.</span>fit<span class="ansi-blue-fg">(</span>X_train<span class="ansi-blue-fg">,</span> y_train<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>fit_params<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    239</span> 
+<span class="ansi-green-intense-fg ansi-bold">    240</span>     <span class="ansi-green-fg">except</span> Exception <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/linear_model/logistic.py</span> in <span class="ansi-cyan-fg">fit</span><span class="ansi-blue-fg">(self, X, y, sample_weight)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1185</span>                 self<span class="ansi-blue-fg">.</span>class_weight<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>penalty<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>dual<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>verbose<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   1186</span>                 self<span class="ansi-blue-fg">.</span>max_iter<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>tol<span class="ansi-blue-fg">,</span> self<span class="ansi-blue-fg">.</span>random_state<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">-&gt; 1187</span><span class="ansi-red-fg">                 sample_weight=sample_weight)
+</span><span class="ansi-green-intense-fg ansi-bold">   1188</span>             self<span class="ansi-blue-fg">.</span>n_iter_ <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>array<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>n_iter_<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1189</span>             <span class="ansi-green-fg">return</span> self
+
+<span class="ansi-green-fg">/Applications/anaconda/envs/py35/lib/python3.5/site-packages/sklearn/svm/base.py</span> in <span class="ansi-cyan-fg">_fit_liblinear</span><span class="ansi-blue-fg">(X, y, C, fit_intercept, intercept_scaling, class_weight, penalty, dual, verbose, max_iter, tol, random_state, multi_class, loss, epsilon, sample_weight)</span>
+<span class="ansi-green-intense-fg ansi-bold">    873</span>             raise ValueError(&#34;This solver needs samples of at least 2 classes&#34;
+<span class="ansi-green-intense-fg ansi-bold">    874</span>                              <span class="ansi-blue-fg">&#34; in the data, but the data contains only one&#34;</span>
+<span class="ansi-green-fg">--&gt; 875</span><span class="ansi-red-fg">                              &#34; class: %r&#34; % classes_[0])
+</span><span class="ansi-green-intense-fg ansi-bold">    876</span> 
+<span class="ansi-green-intense-fg ansi-bold">    877</span>         class_weight_ <span class="ansi-blue-fg">=</span> compute_class_weight<span class="ansi-blue-fg">(</span>class_weight<span class="ansi-blue-fg">,</span> classes_<span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">ValueError</span>: This solver needs samples of at least 2 classes in the data, but the data contains only one class: 1</pre>
 </div>
 </div>
 
